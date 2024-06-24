@@ -146,7 +146,7 @@ class _BottomNavScreenState extends State<BottomNavScreen> {
         child: Column(mainAxisAlignment: MainAxisAlignment.center, children: [
 
           icon.isEmpty ? const SizedBox(width: 20, height: 20) : Image.asset(icon, width: 18, height: 18,
-            color: Get.find<BottomNavController>().currentPage.value == bnbItem ? Color(0xFF00CCFF) : Colors.black87,
+            color: Get.find<BottomNavController>().currentPage.value == bnbItem ? Color(0xFF00CCFF) : Colors.black,
           ),
           const SizedBox(height: Dimensions.paddingSizeExtraSmall),
 
