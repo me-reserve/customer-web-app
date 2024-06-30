@@ -21,9 +21,9 @@ class HomeSearchWidget extends StatelessWidget {
               ),
               alignment: Alignment.center,
               decoration: BoxDecoration(
-                boxShadow: searchBoxShadow,
+                border: Border.all(color: Color(0xFFB6B6B6)),
                 borderRadius: BorderRadius.circular(Dimensions.paddingSizeExtraLarge),
-                color: Theme.of(context).cardColor,
+                color: Color(0xFFF8F8F8),
               ),
               child: Row( children: [
 

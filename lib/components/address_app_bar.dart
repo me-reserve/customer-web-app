@@ -8,7 +8,7 @@ class AddressAppBar extends StatelessWidget implements PreferredSizeWidget {
   @override
   Widget build(BuildContext context) {
     return AppBar(
-      backgroundColor:Get.isDarkMode ? Theme.of(context).cardColor.withOpacity(.2):Theme.of(context).primaryColor,
+      backgroundColor: Colors.transparent,
       shape: Border(
           bottom: BorderSide(
           width: .4,
@@ -31,7 +31,7 @@ class AddressAppBar extends StatelessWidget implements PreferredSizeWidget {
                   child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        Text('services_in'.tr, style: ubuntuRegular.copyWith(color: Colors.white, fontSize: Dimensions.fontSizeExtraSmall)),
+                        Text('services_in'.tr, style: ubuntuRegular.copyWith(color: Color(0xFFB6B6B6), fontSize: Dimensions.fontSizeExtraSmall)),
                         const SizedBox(height: Dimensions.paddingSizeExtraSmall),
                         Padding(
                           padding: EdgeInsets.symmetric(horizontal: ResponsiveHelper.isDesktop(context) ? Dimensions.paddingSizeSmall : 0,),
@@ -44,12 +44,12 @@ class AddressAppBar extends StatelessWidget implements PreferredSizeWidget {
                                   Flexible(
                                     child: Text(
                                       locationController.getUserAddress()!.address!,
-                                      style: ubuntuRegular.copyWith(color: Colors.white, fontSize: Dimensions.fontSizeSmall),
+                                      style: ubuntuRegular.copyWith(color: Color(0xFFB6B6B6), fontSize: Dimensions.fontSizeSmall),
                                       maxLines: 1,
                                       overflow: TextOverflow.ellipsis,
                                     ),
                                   ),
-                                const Icon(Icons.arrow_forward_ios_rounded, color: Colors.white, size: 12),
+                                const Icon(Icons.arrow_forward_ios_rounded, color: Color(0xFFB6B6B6), size: 12),
                   ],
                 );
               }),
@@ -60,7 +60,7 @@ class AddressAppBar extends StatelessWidget implements PreferredSizeWidget {
             InkWell(
                 hoverColor: Colors.transparent,
                 onTap: () => Get.toNamed(RouteHelper.getNotificationRoute()),
-                child: const Icon(Icons.notifications, size: 25, color: Colors.white)),
+                child: const Icon(Icons.notifications, size: 25, color: Color(0xFFB6B6B6))),
       ]),
     );
   }
