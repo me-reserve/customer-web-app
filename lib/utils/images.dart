@@ -27,6 +27,7 @@ class Images {
   static String get profile => 'profile'.png;
   static String get successIcon => 'success_icon'.png;
   static String get us => 'us'.png;
+  static String get ptbr => 'ptbr'.png;
   static String get ar => 'arabic'.png;
   static String get bn => 'bangladesh'.png;
   static String get india => 'india'.png;
@@ -185,5 +186,6 @@ class Images {
 
 extension on String {
   String get png => 'assets/images/$this.png';
+  String get svg => 'assets/images/$this.svg';
   String get jpg => 'assets/images/$this.jpg';
 }
