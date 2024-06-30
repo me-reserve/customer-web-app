@@ -22,7 +22,9 @@ class ServiceReviewItem extends StatelessWidget {
               child: SizedBox(
                 width: Dimensions.imageSize,
                 height: Dimensions.imageSize,
-                child: CustomImage(image:
+                child: reviewData.customer!.userType == 'company-serviceman' ? CustomImage(image: 
+                "${Get.find<SplashController>().configModel.content!.imageBaseUrl}/serviceman/profile/${reviewData.customer!.profileImage}"
+                  ,) :  CustomImage(image: 
                 "${Get.find<SplashController>().configModel.content!.imageBaseUrl}/user/profile_image/${reviewData.customer!.profileImage}"
                   ,),
               ),

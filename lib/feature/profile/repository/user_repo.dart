@@ -7,7 +7,8 @@ class UserRepo {
   UserRepo({required this.apiClient});
 
   Future<Response> getUserInfo() async {
-    return await apiClient.getData(AppConstants.customerInfoUri);
+    Response teste = await apiClient.getData(AppConstants.customerInfoUri);
+    return teste;
   }
 
   Future<Response> updateProfile(UserInfoModel userInfoModel, XFile? data) async {

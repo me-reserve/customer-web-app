@@ -28,7 +28,7 @@ class ProfileHeader extends GetView<UserController> {
                           child: CustomImage(
                             width: 130.0,
                             height: 130.0,
-                            image:isLoggedIn ? userController.userInfoModel?.image != null ? "${Get.find<SplashController>().configModel.content!.imageBaseUrl!}/user/profile_image/${userController.userInfoModel?.image}" : '':'',
+                            image:isLoggedIn ? userController.userInfoModel?.image != null ? userController.userInfoModel?.userType == 'company-serviceman' ? "${Get.find<SplashController>().configModel.content!.imageBaseUrl!}/serviceman/profile/${userController.userInfoModel?.image}"  : "${Get.find<SplashController>().configModel.content!.imageBaseUrl!}/user/profile_image/${userController.userInfoModel?.image}" : '':'',
                           ),
                         ),
 

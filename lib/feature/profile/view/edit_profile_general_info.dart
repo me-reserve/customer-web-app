@@ -197,7 +197,10 @@ class _EditProfileGeneralInfoState extends State<EditProfileGeneralInfo> {
                       image: "${Get.find<SplashController>()
                           .configModel
                           .content!
-                          .imageBaseUrl!}/user/profile_image/${Get.find<UserController>().userInfoModel?.image ?? ""}")
+                          .imageBaseUrl!}/user/profile_image/${Get.find<UserController>().userInfoModel?.image ?? "${Get.find<SplashController>()
+                          .configModel
+                          .content!
+                          .imageBaseUrl!}/serviceman/profile/${Get.find<UserController>().userInfoModel?.image}"?? ""}")
                       : kIsWeb
                       ? Image.network(editProfileTabController.pickedProfileImageFile!.path,
                       height: 100.0, width: 100.0, fit: BoxFit.cover)

@@ -27,7 +27,8 @@ class ChannelItem extends StatelessWidget {
       imagePath = conversationUser.user!.userType=="customer"?"/user/profile_image/"
           :conversationUser.user!.userType=="provider-admin"?"/provider/logo/"
           :conversationUser.user!.userType=="super-admin"?"/business/"
-          :conversationUser.user!.userType=="provider-serviceman"?"/serviceman/profile/":"";
+          :conversationUser.user!.userType=="provider-serviceman"?"/serviceman/profile/"
+          :conversationUser.user!.userType=="company-serviceman"?"/serviceman/profile/":"";
     }
 
     String imageWithPath = conversationUser?.user?.userType=="super-admin"?

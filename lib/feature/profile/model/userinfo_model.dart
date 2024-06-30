@@ -4,6 +4,7 @@ class UserInfoModel {
   String? lName;
   String? email;
   String? image;
+  String? userType;
   String? phone;
   String? password;
   String? confirmPassword;
@@ -18,6 +19,7 @@ class UserInfoModel {
         this.lName,
         this.email,
         this.image,
+        this.userType,
         this.phone,
         this.password,
         this.confirmPassword,
@@ -33,6 +35,7 @@ class UserInfoModel {
     lName = json['last_name'];
     email = json['email'];
     image = json['profile_image'];
+    userType = json['user_type'];
     phone = json['phone'];
     createdAt = json['created_at'];
     referCode = json['ref_code'];
@@ -47,6 +50,7 @@ class UserInfoModel {
     data['last_name'] = lName;
     data['email'] = email;
     data['profile_image'] = image;
+    data['user_type'] = userType;
     data['phone'] = phone;
     data['password'] = password;
     data['confirm_password'] = confirmPassword;
