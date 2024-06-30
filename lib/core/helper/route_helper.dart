@@ -1,4 +1,6 @@
 import 'dart:convert';
+import 'package:demandium/feature/checkout/view/payment_card_mercado_pago.dart';
+import 'package:demandium/feature/checkout/view/payment_pix_mercado_pago.dart';
 import 'package:demandium/feature/create_post/model/my_post_model.dart';
 import 'package:demandium/feature/create_post/model/provider_offer_model.dart';
 import 'package:demandium/feature/favorite/view/my_favorite_screen.dart';
@@ -90,6 +92,8 @@ class RouteHelper {
   static const String zoomImageScreen = '/zoom-image';
   static const String myFavorite = '/my-favorite';
   static const String nearByProviderScreen = '/nearby-provider';
+  static const String pixPayment = '/pix-payment';
+  static const String paymentCardMercadoPago = '/payment-card-mercado-pago';
 
 
   static String getInitialRoute({String fromPage = "home"}) => '$initial?page=$fromPage';
@@ -179,6 +183,8 @@ class RouteHelper {
     return "$customPostCheckout?postId=$postId&providerId=$providerId&amount=$data&bid_id=$bidId";
   }
   static String getTrackBookingRoute() => trackBooking;
+  static String getPixPayment() => pixPayment;
+  static String getCardPaymentMercadoPago() => paymentCardMercadoPago;
   static String getHtmlRoute(String page) => '$html?page=$page';
   static String getCategoryRoute(String fromPage,String campaignID) => '$categories?fromPage=$fromPage&campaignID=$campaignID';
   static String getCategoryProductRoute(String id, String name, String subCategoryIndex) {
@@ -310,6 +316,8 @@ class RouteHelper {
           fromPage: Get.parameters['page']! ,
         )),
     GetPage(name: signUp, page: () => const SignUpScreen()),
+    GetPage(name: pixPayment, page: () => const PaymentPixMercadoPago()),
+    GetPage(name: paymentCardMercadoPago, page: () => const PaymentCardMercadoPago()),
 
 
     GetPage(name: accessLocation, page: () => AccessLocationScreen(

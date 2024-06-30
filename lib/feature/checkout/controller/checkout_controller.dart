@@ -78,7 +78,7 @@ class CheckOutController extends GetxController implements GetxService{
     }
   }
 
- void changePaymentMethod({DigitalPaymentMethod ? digitalMethod, OfflinePaymentModel? offlinePaymentModel, bool walletPayment = false, bool cashAfterService = false,bool shouldUpdate = true, }){
+ void changePaymentMethod({DigitalPaymentMethod ? digitalMethod, OfflinePaymentModel? offlinePaymentModel, bool walletPayment = false, bool cashAfterService = false,bool shouldUpdate = true}){
 
     if( offlinePaymentModel != null){
 

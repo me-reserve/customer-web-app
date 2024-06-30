@@ -166,7 +166,9 @@ class _ProceedToCheckoutButtonWidgetState extends State<ProceedToCheckoutButtonW
                             customSnackBar("provide_offline_payment_info".tr);
                           }
 
-                        }else if( checkoutController.selectedPaymentMethod == PaymentMethodName.digitalPayment){
+                        }
+                        
+                        else if( checkoutController.selectedPaymentMethod == PaymentMethodName.digitalPayment){
 
                           if(checkoutController.selectedDigitalPaymentMethod != null && checkoutController.selectedDigitalPaymentMethod?.gateway != "offline"){
                             _makeDigitalPayment(addressModel, checkoutController.selectedDigitalPaymentMethod, isPartialPayment);
