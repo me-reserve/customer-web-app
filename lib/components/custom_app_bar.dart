@@ -26,13 +26,13 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
   @override
   Widget build(BuildContext context) {
     return ResponsiveHelper.isDesktop(context) ? const WebMenuBar() : AppBar(
-      backgroundColor: Get.isDarkMode ? Theme.of(context).cardColor.withOpacity(.2):Theme.of(context).primaryColor,
+      backgroundColor: Colors.transparent,
       centerTitle: centerTitle,
       shape: Border(bottom: BorderSide(width: .4, color: Theme.of(context).primaryColorLight.withOpacity(.2))), elevation: 0,
       titleSpacing: 0,
       title: Column(crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Text(title!, style: ubuntuMedium.copyWith(fontSize: Dimensions.fontSizeLarge, color:  Theme.of(context).primaryColorLight),),
+          Text(title!, style: ubuntuMedium.copyWith(fontSize: Dimensions.fontSizeLarge, color:  Color(0xFF595959)),),
           if(subTitle!=null) Text(subTitle!,style: ubuntuRegular.copyWith(fontSize: Dimensions.fontSizeSmall,color:  Theme.of(context).primaryColorLight),),
 
         ],
@@ -40,7 +40,7 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
 
       leading: isBackButtonExist! ? IconButton(
         hoverColor:Colors.transparent,
-        icon: Icon(Icons.arrow_back_ios,color:Theme.of(context).primaryColorLight),
+        icon: Icon(Icons.arrow_back_ios,color: Color(0xFF595959)),
         color: Theme.of(context).textTheme.bodyLarge!.color,
         onPressed: () => onBackPressed != null ? onBackPressed!() : Navigator.pop(context),
       ) : const SizedBox(),

@@ -26,7 +26,7 @@ class AddressInformation extends StatelessWidget {
 
         return Column( children: [
 
-          isFromCreatePostPage == true ? const SizedBox() : Text('service_address'.tr, style: ubuntuMedium.copyWith(fontSize: Dimensions.fontSizeDefault)),
+          isFromCreatePostPage == true ? const SizedBox() : Text('Selecione seu endereço', style: ubuntuMedium.copyWith(fontSize: Dimensions.fontSizeDefault)),
           const SizedBox(height: Dimensions.paddingSizeDefault),
 
           Container( width: Get.width,

@@ -1,5 +1,6 @@
 import 'package:get/get.dart';
 import 'package:demandium/components/core_export.dart';
+import 'package:universal_html/html.dart';
 
 class PaymentMethodButton extends StatelessWidget {
   final String title;
@@ -9,8 +10,9 @@ class PaymentMethodButton extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+
     return Padding(
-      padding: const EdgeInsets.all(8.0),
+      padding: const EdgeInsets.all(0),
       child: GetBuilder<CheckOutController>(builder: (controller){
         return GestureDetector(
           onTap:(){
@@ -22,8 +24,9 @@ class PaymentMethodButton extends StatelessWidget {
               controller.changePaymentMethod();
             }
           },
-          child: Stack(alignment: Alignment.topRight, clipBehavior: Clip.none ,children: [
+          child: Stack(alignment: Alignment.bottomRight, clipBehavior: Clip.none ,children: [
             Container(
+              width: double.infinity,
               padding: const EdgeInsets.symmetric(vertical : Dimensions.paddingSizeDefault, horizontal: Dimensions.paddingSizeSmall),
               decoration: BoxDecoration(
                 color: Theme.of(context).hoverColor,
@@ -36,7 +39,7 @@ class PaymentMethodButton extends StatelessWidget {
                   Image.asset(assetName,height: 25,width: 25,),
                   const SizedBox(width: Dimensions.paddingSizeSmall-3,),
                   Flexible(
-                    child: Text(title, style: ubuntuRegular.copyWith(
+                    child: Text(title == "Pagar com Carteira" ? "Pagar com beneficio empresa" : title , style: ubuntuRegular.copyWith(
                         color: controller.selectedPaymentMethod == paymentMethodName ? Theme.of(context).colorScheme.primary : null,
                         overflow: TextOverflow.ellipsis, fontSize: Dimensions.fontSizeDefault-1
                     )),

@@ -1,9 +1,11 @@
 
+import 'package:demandium/components/modal_sentimento.dart';
 import 'package:demandium/feature/home/controller/advertisement_controller.dart';
 import 'package:demandium/feature/home/widget/explore_provider_card.dart';
 import 'package:demandium/feature/home/widget/highlight_provider_widget.dart';
 import 'package:get/get.dart';
 import 'package:demandium/components/core_export.dart';
+import 'package:intl/intl.dart';
 
 
 class HomeScreen extends StatefulWidget {
@@ -43,9 +45,44 @@ class _HomeScreenState extends State<HomeScreen> {
   AddressModel? _previousAddress;
   int availableServiceCount = 0;
 
+  Future<void> _checkModal() async {
+    SharedPreferences prefs = await SharedPreferences.getInstance();
+    String today = DateFormat('yyyy-MM-dd').format(DateTime.now());
+    String lastShown = prefs.getString('modalShownDate') ?? '';
+
+    if (lastShown != today) {
+      WidgetsBinding.instance.addPostFrameCallback((_) {
+        _showModalBottomSheet(context);
+      });
+    }
+  }
+
+  _initModal(){
+    WidgetsBinding.instance.addPostFrameCallback((_) {
+        _showModalBottomSheet(context);
+      });
+  }
+
+  Future<void> _setModalShown() async {
+    SharedPreferences prefs = await SharedPreferences.getInstance();
+    String today = DateFormat('yyyy-MM-dd').format(DateTime.now());
+    prefs.setString('modalShownDate', today);
+  }
+
+  void _closeModal() {
+    _setModalShown();
+    Navigator.of(context).pop();
+  }
+
+
   @override
   void initState() {
     super.initState();
+
+    //_checkModal();
+
+    _initModal();
+    
 
     Get.find<LocalizationController>().filterLanguage(shouldUpdate: false);
     if(Get.find<AuthController>().isLoggedIn()) {
@@ -219,6 +256,23 @@ class _HomeScreenState extends State<HomeScreen> {
           ),
         ),
       ),
+    );
+  }
+
+   void _showModalBottomSheet(BuildContext context) {
+    showDialog(
+      context: context,
+      builder: (BuildContext context) {
+        return AlertDialog(
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(20.0),
+          ),
+          contentPadding: EdgeInsets.zero,
+          content: ModalSentimento(onClose: () {
+            Navigator.of(context).pop();
+          }),
+        );
+      },
     );
   }
 }

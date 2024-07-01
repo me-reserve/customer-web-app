@@ -31,12 +31,11 @@ class _PaymentPageState extends State<PaymentPage> {
             Padding( padding: const EdgeInsets.symmetric(vertical :Dimensions.paddingSizeDefault),
               child: Row(children: [
                 Text(" ${'choose_payment_method'.tr} ", style: ubuntuBold.copyWith(fontSize: Dimensions.fontSizeDefault)),
-                Expanded(child: Text('click_one_of_the_option_bellow'.tr, style: ubuntuRegular.copyWith(fontSize: Dimensions.fontSizeSmall, color: Theme.of(context).hintColor))),
               ]),
             ),
             if(checkoutController.othersPaymentList.isNotEmpty)
             SizedBox(child: GridView.builder(
-              gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 2, crossAxisSpacing: Dimensions.paddingSizeExtraSmall,mainAxisExtent: 90),
+              gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 1, crossAxisSpacing: Dimensions.paddingSizeExtraSmall,mainAxisExtent: 90),
               itemBuilder: (context, index){
                 return checkoutController.othersPaymentList.elementAt(index);},
                 shrinkWrap: true,
@@ -45,11 +44,6 @@ class _PaymentPageState extends State<PaymentPage> {
               ),
             ),
 
-            if(checkoutController.digitalPaymentList.isNotEmpty)
-            Row( children: [
-              Text(" ${'pay_via_online'.tr} ", style: ubuntuBold.copyWith(fontSize: Dimensions.fontSizeDefault)),
-              Expanded(child: Text('faster_and_secure_way_to_pay_bill'.tr, style: ubuntuRegular.copyWith(fontSize: Dimensions.fontSizeSmall, color: Theme.of(context).hintColor))),
-            ]) ,
             if(checkoutController.digitalPaymentList.isNotEmpty)
             Padding( padding: const EdgeInsets.only(top: Dimensions.paddingSizeDefault),
               child: DigitalPaymentMethodView(
@@ -101,8 +95,9 @@ class DigitalPaymentMethodView extends StatelessWidget {
           return InkWell(
             onTap: isOffline ? null :  ()=> onTap(index),
             child: Container(
+              margin: EdgeInsets.symmetric(vertical: 10),
               decoration: BoxDecoration(
-                  color: isSelected ? Theme.of(context).hoverColor : Colors.transparent,
+                  color: isSelected ? Color.fromARGB(255, 214, 241, 247) : Color.fromARGB(255, 243, 243, 243),
                   borderRadius: BorderRadius.circular(Dimensions.radiusDefault)
               ),
               padding: const EdgeInsets.symmetric(horizontal: Dimensions.paddingSizeDefault, vertical: Dimensions.paddingSizeDefault),

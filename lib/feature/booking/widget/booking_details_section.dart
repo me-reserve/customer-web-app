@@ -33,6 +33,42 @@ class BookingDetailsSection extends StatelessWidget {
                   BookingOtpWidget(bookingDetailsContent: bookingDetailsContent) : const SizedBox(),
                   const SizedBox(height: Dimensions.paddingSizeEight),
 
+                  SizedBox(height: 20),
+
+                  bookingDetailsContent.provider != null ? Container(
+                    child: ElevatedButton(
+                      style: ElevatedButton.styleFrom(
+                        backgroundColor: Color(0xFF27D262)
+                      ),
+                      onPressed: (){
+                        _sendMessage(bookingDetailsContent.readableId, bookingDetailsContent.provider!.companyPhone);
+                      },
+                      child: Padding(
+                        padding: const EdgeInsets.all(8.0),
+                        child: ListTile(
+                          leading: Image.asset(Images.whatsappIcon,
+                        
+                          ),
+                          title: const Text("Agendar agora?", style: TextStyle(
+                            fontSize: 20,
+                            color: Colors.white,
+                            fontWeight: FontWeight.bold
+                          ),),
+                        ),
+                      ),
+                    ),
+                  ) : const SizedBox(
+                    child: Text("Pedido pendente, aguarde ser aceito para agendar",
+                      style: TextStyle(
+                        fontSize: 17,
+                        fontWeight: FontWeight.bold,
+                        color: Color(0xFF00CCFF)
+                      ),
+                    ),
+                  ) ,
+ 
+                  SizedBox(height: 20),
+
                   Container(
                     decoration: BoxDecoration(color: Theme.of(context).cardColor , borderRadius: BorderRadius.circular(Dimensions.radiusDefault),
                         border: Border.all(color: Theme.of(context).hintColor.withOpacity(0.3)), boxShadow: searchBoxShadow
@@ -223,5 +259,22 @@ class BookingDetailsSection extends StatelessWidget {
         }
       }),
     );
+  }
+
+  void _sendMessage(int? voucherNumber, String? phoneNumber) async {
+    // Número de telefone (inclua o código do país)
+
+    // Mensagem que será enviada
+    String message = 'Olá! Gostaria de agendar um serviço através desse voucher ${voucherNumber}';
+
+    // Monta a URL
+    String url = 'https://wa.me/$phoneNumber/?text=${Uri.encodeFull(message)}';
+
+    // Verifica se é possível abrir o link
+    if (await canLaunch(url)) {
+      await launch(url);
+    } else {
+      throw 'Não foi possível abrir $url';
+    }
   }
 }

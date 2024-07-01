@@ -19,13 +19,30 @@ class RowText extends StatelessWidget {
           Expanded(
             child: Row(
               children: [
+                Container(
+                  padding: EdgeInsets.all(10),
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.all(Radius.circular(10)),
+                    color: quantity == null ? Colors.transparent : Color(0xFF05C6F1),
+                  ),
+                  child: Text( quantity == null ? "" : " x $quantity", style: TextStyle(
+                    color: Colors.white,
+                    fontWeight: FontWeight.bold
+                  ),)
+                ),
+
+                SizedBox(width: 10),
+
                 SizedBox(
                   width: ResponsiveHelper.isWeb() ? 200 : Get.width / 2,
                   child: Text(title,
                     maxLines: 2, overflow: TextOverflow.ellipsis,
-                    style: ubuntuRegular.copyWith(fontSize: Dimensions.fontSizeDefault),),
+                    style: ubuntuRegular.copyWith(fontSize: Dimensions.fontSizeDefault,
+                    fontWeight: FontWeight.bold
+                    
+                    ),),
                 ),
-                Text( quantity == null ? "" : " x $quantity")
+                
               ],
             ),
           ),

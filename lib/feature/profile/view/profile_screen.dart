@@ -22,9 +22,34 @@ class _ProfileScreenState extends State<ProfileScreen> {
   Widget build(BuildContext context) {
 
     final profileCartModelList = [
+      ProfileCardItemModel( 'settings'.tr, Images.settings,Get.find<AuthController>().isLoggedIn() ?
+      RouteHelper.getSettingRoute() : RouteHelper.getNotLoggedScreen(RouteHelper.profile,"profile"),
+      ),
       ProfileCardItemModel( 'my_address'.tr, Images.address,Get.find<AuthController>().isLoggedIn() ?
       RouteHelper.getAddressRoute('fromProfileScreen') : RouteHelper.getNotLoggedScreen(RouteHelper.profile,"profile"),
       ),
+      ProfileCardItemModel( 'my_favorite'.tr, Images.myFavorite,Get.find<AuthController>().isLoggedIn() ?
+      RouteHelper.getMyFavoriteScreen() : RouteHelper.getNotLoggedScreen(RouteHelper.profile,"profile"),
+      ),
+      ProfileCardItemModel( 'my_wallet'.tr, Images.walletMenu,Get.find<AuthController>().isLoggedIn() ?
+      RouteHelper.getMyWalletScreen() : RouteHelper.getNotLoggedScreen(RouteHelper.profile,"profile"),
+      ),
+      ProfileCardItemModel( 'help_&_support'.tr, Images.helpIcon,Get.find<AuthController>().isLoggedIn() ?
+      RouteHelper.getSupportRoute() : RouteHelper.getNotLoggedScreen(RouteHelper.profile,"profile"),
+      ),
+      ProfileCardItemModel( 'privacy_policy'.tr, Images.privacyPolicyIcon,Get.find<AuthController>().isLoggedIn() ?
+      RouteHelper.getHtmlRoute('privacy-policy') : RouteHelper.getNotLoggedScreen(RouteHelper.profile,"profile"),
+      ),
+      ProfileCardItemModel( 'terms_and_conditions'.tr, Images.termsIcon,Get.find<AuthController>().isLoggedIn() ?
+      RouteHelper.getHtmlRoute('terms-and-condition') : RouteHelper.getNotLoggedScreen(RouteHelper.profile,"profile"),
+      ),
+      ProfileCardItemModel( 'refund_policy'.tr, Images.refundPolicy,Get.find<AuthController>().isLoggedIn() ?
+      RouteHelper.getHtmlRoute('refund_policy') : RouteHelper.getNotLoggedScreen(RouteHelper.profile,"profile"),
+      ),
+      ProfileCardItemModel( 'cancellation_policy'.tr, Images.cancellationPolicy,Get.find<AuthController>().isLoggedIn() ?
+      RouteHelper.getHtmlRoute('cancellation_policy') : RouteHelper.getNotLoggedScreen(RouteHelper.profile,"profile"),
+      ),
+
       ProfileCardItemModel(
         'notifications'.tr, Images.notification, RouteHelper.getNotificationRoute(),
       ),

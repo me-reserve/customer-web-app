@@ -6,6 +6,7 @@ class Images {
   static String get emptyProvider => 'empty_provider'.png;
   static String get emptySearchService => 'empty_search_service'.png;
   static String get emptyCart => 'empty_cart'.png;
+  static String get whatsappIcon => 'whatsapp_icon'.png;
   static String get emptyNotification => 'empty_notification'.png;
   static String get emptyAddress => 'empty_address'.png;
   static String get cart => 'cart'.png;
@@ -80,7 +81,7 @@ class Images {
   static String get emptyReview => 'empty_review'.png;
   static String get reviewTopBanner => 'review_top_banner'.png;
   static String get offerMenu => 'offers_menu'.png;
-  static String get orderComplete => 'order_complete'.png;
+  static String get orderComplete => 'order_complete'.svg;
   static String get aboutUs => 'about_us'.png;
   static String get folder => 'folder'.png;
   static String get couponIcon => 'coupon_icon'.png;
@@ -165,6 +166,11 @@ class Images {
   static String get selectedProvider => 'selected_provider'.png;
   static String get unselectedProvider=> 'unselected_provider'.png;
   static String get recommendedServiceBg => 'recommended_service'.png;
+  static String get muitoTriste => 'muito_triste'.png;
+  static String get triste => 'triste'.png;
+  static String get normal => 'normal'.png;
+  static String get feliz => 'feliz'.png;
+  static String get muitoFeliz => 'muito_feliz'.png;
 
 
   ///Share icon
