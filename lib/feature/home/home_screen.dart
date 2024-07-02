@@ -6,6 +6,7 @@ import 'package:demandium/feature/home/widget/highlight_provider_widget.dart';
 import 'package:get/get.dart';
 import 'package:demandium/components/core_export.dart';
 import 'package:intl/intl.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 
 
 class HomeScreen extends StatefulWidget {
@@ -45,28 +46,25 @@ class _HomeScreenState extends State<HomeScreen> {
   AddressModel? _previousAddress;
   int availableServiceCount = 0;
 
+  Future<void> _setModalShown() async {
+    SharedPreferences prefs = await SharedPreferences.getInstance();
+    String today = DateFormat('yyyy-MM-dd').format(DateTime.now());
+    bool result = await prefs.setString('modalShownDate', today);
+    print('Modal Shown Date set to: $today, Result: $result'); // Log para verificação
+  }
+  
   Future<void> _checkModal() async {
     SharedPreferences prefs = await SharedPreferences.getInstance();
     String today = DateFormat('yyyy-MM-dd').format(DateTime.now());
-    String lastShown = prefs.getString('modalShownDate') ?? '';
+    String? lastShown = prefs.getString('modalShownDate');
+    print(today);
+    print(lastShown);
 
-    if (lastShown != today) {
+    if (lastShown == null || lastShown != today) {
       WidgetsBinding.instance.addPostFrameCallback((_) {
         _showModalBottomSheet(context);
       });
     }
-  }
-
-  _initModal(){
-    WidgetsBinding.instance.addPostFrameCallback((_) {
-        _showModalBottomSheet(context);
-      });
-  }
-
-  Future<void> _setModalShown() async {
-    SharedPreferences prefs = await SharedPreferences.getInstance();
-    String today = DateFormat('yyyy-MM-dd').format(DateTime.now());
-    prefs.setString('modalShownDate', today);
   }
 
   void _closeModal() {
@@ -78,11 +76,7 @@ class _HomeScreenState extends State<HomeScreen> {
   @override
   void initState() {
     super.initState();
-
-    //_checkModal();
-
-    _initModal();
-    
+    _checkModal();
 
     Get.find<LocalizationController>().filterLanguage(shouldUpdate: false);
     if(Get.find<AuthController>().isLoggedIn()) {
@@ -268,9 +262,7 @@ class _HomeScreenState extends State<HomeScreen> {
             borderRadius: BorderRadius.circular(20.0),
           ),
           contentPadding: EdgeInsets.zero,
-          content: ModalSentimento(onClose: () {
-            Navigator.of(context).pop();
-          }),
+          content: ModalSentimento(onClose: _closeModal),
         );
       },
     );

@@ -11,7 +11,7 @@ class ModalSentimento extends StatefulWidget {
 }
 
 class _ModalSentimentoState extends State<ModalSentimento> {
-  List<bool> _checkboxValues = List<bool>.filled(5, false);
+  int? _selectedIndex = null;
   bool botaoHabilitado = false;
   TextEditingController observacao_controller = TextEditingController();
 
@@ -102,11 +102,12 @@ class _ModalSentimentoState extends State<ModalSentimento> {
   Column _buildCheckboxRow(int index, String imagePath) {
     return Column(
       children: [
-        Checkbox(
-          value: _checkboxValues[index],
-          onChanged: (bool? value) {
+        Radio<int>(
+          value: index,
+          groupValue: _selectedIndex,
+          onChanged: (int? value) {
             setState(() {
-              _checkboxValues[index] = value ?? false;
+              _selectedIndex = value;
               _updateButtonState();
             });
           },
@@ -122,23 +123,18 @@ class _ModalSentimentoState extends State<ModalSentimento> {
   }
 
   bool _areAnyCheckboxesChecked() {
-    return _checkboxValues.contains(true);
+    return _selectedIndex != null;
   }
 
   void _updateButtonState() {
     setState(() {
-      botaoHabilitado = _checkboxValues.contains(true);
+      botaoHabilitado = true;
     });
   }
 
   void _handleSubmit() {
-    List<int> selectedIndexes = [];
-    for (int i = 0; i < _checkboxValues.length; i++) {
-      if (_checkboxValues[i]) {
-        selectedIndexes.add(i);
-      }
-    }
-    print('Checkboxes selecionados: $selectedIndexes');
+
+    print('Checkboxes selecionados: $_selectedIndex');
     print(observacao_controller.text);
     widget.onClose();
   }

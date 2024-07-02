@@ -1,6 +1,5 @@
 import 'package:get/get.dart';
 import 'package:demandium/components/core_export.dart';
-import 'package:universal_html/html.dart';
 
 class PaymentMethodButton extends StatelessWidget {
   final String title;
