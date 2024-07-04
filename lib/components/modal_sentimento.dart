@@ -1,8 +1,10 @@
 import 'package:demandium/components/core_export.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 class ModalSentimento extends StatefulWidget {
   final VoidCallback onClose;
+  
 
   ModalSentimento({required this.onClose});
 
@@ -11,9 +13,21 @@ class ModalSentimento extends StatefulWidget {
 }
 
 class _ModalSentimentoState extends State<ModalSentimento> {
+  dynamic user;
   int? _selectedIndex = null;
   bool botaoHabilitado = false;
   TextEditingController observacao_controller = TextEditingController();
+
+  @override
+  initState(){
+    // TODO: implement initState
+
+     if(Get.find<AuthController>().isLoggedIn()) {
+      Get.find<UserController>().getUserInfo();
+    }
+
+    super.initState();
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -40,11 +54,11 @@ class _ModalSentimentoState extends State<ModalSentimento> {
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: [
-                _buildCheckboxRow(0, 'assets/images/muito_triste.png'),
-                _buildCheckboxRow(1, 'assets/images/triste.png'),
-                _buildCheckboxRow(2, 'assets/images/normal.png'),
-                _buildCheckboxRow(3, 'assets/images/feliz.png'),
-                _buildCheckboxRow(4, 'assets/images/muito_feliz.png'),
+                _buildCheckboxRow(1, 'assets/images/muito_triste.png'),
+                _buildCheckboxRow(2, 'assets/images/triste.png'),
+                _buildCheckboxRow(3, 'assets/images/normal.png'),
+                _buildCheckboxRow(4, 'assets/images/feliz.png'),
+                _buildCheckboxRow(5, 'assets/images/muito_feliz.png'),
               ],
             ),
             SizedBox(height: 20),
@@ -133,9 +147,22 @@ class _ModalSentimentoState extends State<ModalSentimento> {
   }
 
   void _handleSubmit() {
+    dynamic id = Get.find<UserController>().userInfoModel!.id;
 
-    print('Checkboxes selecionados: $_selectedIndex');
-    print(observacao_controller.text);
+    if (id == null) {
+      print('User ID is null');
+      return;
+    }
+
+    Map<String, dynamic> body = {
+      "collaborator_id": id,
+      "emotion_type_id" : _selectedIndex.toString(),
+      "description" : observacao_controller.text
+    };
+
+    Get.find<UserController>().addEmotion(body);
+    print(body);
+    
     widget.onClose();
   }
 }

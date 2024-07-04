@@ -1,12 +1,16 @@
+import 'dart:convert';
+
 import 'package:get/get.dart';
 import 'package:demandium/components/core_export.dart';
 import 'package:timeago/timeago.dart' as timeago;
+import 'package:http/http.dart' as http;
+
 
 class UserController extends GetxController implements GetxService {
   final UserRepo userRepo;
+  
+
   UserController({required this.userRepo});
-
-
 
    String fName='';
    String lName='';
@@ -36,6 +40,19 @@ class UserController extends GetxController implements GetxService {
 
   String _userProfileImage = '';
   String get userProfileImage => _userProfileImage;
+
+  Future<dynamic> addEmotion(body) async {
+    final url = Uri.parse('${AppConstants.baseUrl}${AppConstants.potsEmotion}');
+
+    final response = await http.post(url, body: body);
+
+    if(response.statusCode == 200){
+      return jsonDecode(response.body);
+    }else{
+      throw Exception('Falha ao enviar sentimento');
+    }
+
+  }
 
   Future<void> getUserInfo({bool reload = true}) async {
 

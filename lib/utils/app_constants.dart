@@ -79,6 +79,7 @@ class AppConstants {
   static const String getProviderDetails = '/api/v1/customer/provider-details';
   static const String getProviderBasedOnSubcategory = '/api/v1/customer/provider/list-by-sub-category';
   static const String getFeaturedCategoryService = '/api/v1/customer/featured-categories?limit=100&offset=1';
+  static const String potsEmotion = '/api/v1/customer/emotion/emotion-add';
 
   static const String createCustomizedPost = '/api/v1/customer/post';
   static const String getMyPostList = '/api/v1/customer/post';
