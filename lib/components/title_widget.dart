@@ -10,7 +10,7 @@ class TitleWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Row(mainAxisAlignment: MainAxisAlignment.spaceBetween, children: [
-      Text(title!.tr, style: ubuntuBold.copyWith(fontSize: Dimensions.fontSizeExtraLarge,color: title=='recently_view_services'
+      Text(title!.tr, style: ubuntuBold.copyWith(fontSize: 15,color: title=='recently_view_services'
           ? Colors.white:Theme.of(context).textTheme.bodyLarge!.color!.withOpacity(.8))),
       (onTap != null) ? InkWell(
         onTap: onTap,
