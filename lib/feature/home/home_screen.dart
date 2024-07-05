@@ -45,6 +45,7 @@ class HomeScreen extends StatefulWidget {
 class _HomeScreenState extends State<HomeScreen> {
   AddressModel? _previousAddress;
   int availableServiceCount = 0;
+  bool _modalShown = false;
 
   Future<void> _setModalShown() async {
     dynamic id = Get.find<UserController>().userInfoModel?.id.toString();
@@ -67,7 +68,8 @@ class _HomeScreenState extends State<HomeScreen> {
 
   Future<void> _checkModal() async {
     dynamic id = Get.find<UserController>().userInfoModel?.id.toString();
-    if (id == null) return;
+    if (id == null || _modalShown) return; // Verifica se o modal já foi mostrado
+
 
     SharedPreferences prefs = await SharedPreferences.getInstance();
     String today = DateFormat('yyyy-MM-dd').format(DateTime.now());
@@ -81,6 +83,7 @@ class _HomeScreenState extends State<HomeScreen> {
     if (lastShown == null || lastShown != today || !(userIdList?.contains(id) ?? false)) {
       WidgetsBinding.instance.addPostFrameCallback((_) {
         _showModalBottomSheet(context);
+        _modalShown = true;
       });
     }
   }
@@ -94,9 +97,6 @@ class _HomeScreenState extends State<HomeScreen> {
   @override
   void initState() {
     super.initState();
-
-    _checkModal();
-
     Get.find<LocalizationController>().filterLanguage(shouldUpdate: false);
     if(Get.find<AuthController>().isLoggedIn()) {
       Get.find<UserController>().getUserInfo();
@@ -138,141 +138,162 @@ class _HomeScreenState extends State<HomeScreen> {
 
   @override
   Widget build(BuildContext context) {
-
     return Scaffold(
       appBar: homeAppBar(),
-      endDrawer:ResponsiveHelper.isDesktop(context) ? const MenuDrawer() : null,
-      body: ResponsiveHelper.isDesktop(context) ? WebHomeScreen(scrollController: scrollController, availableServiceCount: availableServiceCount,) : SafeArea(
+      endDrawer: ResponsiveHelper.isDesktop(context) ? const MenuDrawer() : null,
+      body: ResponsiveHelper.isDesktop(context) ? WebHomeScreen(
+        scrollController: scrollController,
+        availableServiceCount: availableServiceCount,
+      ) : SafeArea(
         child: RefreshIndicator(
           onRefresh: () async {
-
-            if(availableServiceCount > 0){
-              await Get.find<ServiceController>().getAllServiceList(1,true);
+            if (availableServiceCount > 0) {
+              await Get.find<ServiceController>().getAllServiceList(1, true);
               await Get.find<BannerController>().getBannerList(true);
-              await  Get.find<AdvertisementController>().getAdvertisementList(true);
-              await Get.find<CategoryController>().getCategoryList(1,true);
-              await Get.find<ServiceController>().getRecommendedServiceList(1,true);
+              await Get.find<AdvertisementController>().getAdvertisementList(true);
+              await Get.find<CategoryController>().getCategoryList(1, true);
+              await Get.find<ServiceController>().getRecommendedServiceList(1, true);
               await Get.find<ProviderBookingController>().getProviderList(1, true);
-              await Get.find<ServiceController>().getPopularServiceList(1,true,);
-              await Get.find<ServiceController>().getRecentlyViewedServiceList(1,true,);
-              await Get.find<ServiceController>().getTrendingServiceList(1,true,);
+              await Get.find<ServiceController>().getPopularServiceList(1, true);
+              await Get.find<ServiceController>().getRecentlyViewedServiceList(1, true);
+              await Get.find<ServiceController>().getTrendingServiceList(1, true);
               await Get.find<CampaignController>().getCampaignList(true);
               await Get.find<ServiceController>().getFeatherCategoryList(true);
               await Get.find<CartController>().getCartListFromServer();
-            }else{
+            } else {
               await Get.find<BannerController>().getBannerList(true);
             }
-
             Get.find<ProviderBookingController>().resetProviderFilterData();
-
           },
           child: GestureDetector(
             onTap: () => FocusManager.instance.primaryFocus?.unfocus(),
-            child: GetBuilder<SplashController>(builder: (splashController){
-              return GetBuilder<ProviderBookingController>(builder: (providerController){
-                return GetBuilder<ServiceController>(builder: (serviceController){
+            child: GetBuilder<UserController>(
+              builder: (userController) {
+                if (userController.userInfoModel != null) {
+                  _checkModal();
+                }
+                return GetBuilder<SplashController>(
+                  builder: (splashController) {
+                    return GetBuilder<ProviderBookingController>(
+                      builder: (providerController) {
+                        return GetBuilder<ServiceController>(
+                          builder: (serviceController) {
+                            bool isAvailableProvider = providerController.providerList != null && providerController.providerList!.isNotEmpty;
+                            int? providerBooking = splashController.configModel.content?.directProviderBooking;
 
-                  bool isAvailableProvider = providerController.providerList != null && providerController.providerList!.isNotEmpty;
-                  int ? providerBooking = splashController.configModel.content?.directProviderBooking;
-
-                  return  CustomScrollView(
-                    controller: scrollController,
-                    physics: const AlwaysScrollableScrollPhysics(),
-                    slivers: [
-
-                      const SliverToBoxAdapter(child: SizedBox(height: Dimensions.paddingSizeSmall)),
-
-                      const HomeSearchWidget(),
-
-                      SliverToBoxAdapter(
-                        child: Center(child: SizedBox(width: Dimensions.webMaxWidth, child: Column(children: [
-
-                          const BannerView(),
-                          availableServiceCount > 0 ? Column(children: [
-                            const Padding(padding: EdgeInsets.symmetric(horizontal: Dimensions.paddingSizeDefault),
-                              child: CategoryView(),
-                            ),
-
-                            const Padding(padding: EdgeInsets.symmetric(horizontal: Dimensions.paddingSizeDefault),
-                              child: HighlightProviderWidget(),
-                            ),
-
-                            const SizedBox(height: Dimensions.paddingSizeLarge),
-                            HorizontalScrollServiceView(fromPage: 'popular_services',serviceList: serviceController.popularServiceList),
-
-                            const RandomCampaignView(),
-
-                            const SizedBox(height: Dimensions.paddingSizeLarge),
-                            const RecommendedServiceView(height: 215,),
-
-
-                            (providerBooking == 1 && (isAvailableProvider || providerController.providerList == null)) ?
-                            Padding(padding: const EdgeInsets.symmetric(horizontal: Dimensions.paddingSizeDefault, vertical: Dimensions.paddingSizeLarge),
-                              child: SizedBox(
-                                height: 180,
-                                child: ExploreProviderCard(showShimmer: providerController.providerList == null,),
-                              ),
-                            ) : const SizedBox(),
-
-                            if(Get.find<SplashController>().configModel.content?.directProviderBooking==1)
-                              const HomeRecommendProvider(height: 235,),
-
-                            if(Get.find<SplashController>().configModel.content!.biddingStatus == 1)
-                              (serviceController.allService != null && serviceController.allService!.isNotEmpty) ?
-                              const Padding(
-                                padding: EdgeInsets.symmetric(horizontal: Dimensions.paddingSizeDefault, vertical: Dimensions.paddingSizeLarge),
-                                child: HomeCreatePostView(showShimmer: false,),
-                              ) : const SizedBox(),
-
-
-                            if(Get.find<AuthController>().isLoggedIn())
-                              HorizontalScrollServiceView(fromPage: 'recently_view_services',serviceList: serviceController.recentlyViewServiceList),
-                            const CampaignView(),
-                            HorizontalScrollServiceView(fromPage: 'trending_services',serviceList: serviceController.trendingServiceList),
-
-                            const FeatheredCategoryView(),
-
-                            (serviceController.allService != null && serviceController.allService!.isNotEmpty) ? (ResponsiveHelper.isMobile(context) || ResponsiveHelper.isTab(context))?  Padding(
-                              padding: const EdgeInsets.fromLTRB(Dimensions.paddingSizeDefault, 15, Dimensions.paddingSizeDefault,  Dimensions.paddingSizeSmall,),
-                              child: TitleWidget(
-                                textDecoration: TextDecoration.underline,
-                                title: 'all_service'.tr,
-                                onTap: () => Get.toNamed(RouteHelper.getSearchResultRoute()),
-                              ),
-                            ) : const SizedBox.shrink() : const SizedBox.shrink(),
-
-                            PaginatedListView(
-                              scrollController: scrollController,
-                              totalSize: serviceController.serviceContent?.total ,
-                              offset:  serviceController.serviceContent?.currentPage ,
-                              onPaginate: (int offset) async => await serviceController.getAllServiceList(offset, false),
-                              showBottomSheet: true,
-                              itemView: ServiceViewVertical(
-                                service: serviceController.serviceContent != null ? serviceController.allService : null,
-                                padding: EdgeInsets.symmetric(
-                                  horizontal: ResponsiveHelper.isDesktop(context) ? Dimensions.paddingSizeExtraSmall : Dimensions.paddingSizeDefault,
-                                  vertical: ResponsiveHelper.isDesktop(context) ? Dimensions.paddingSizeExtraSmall : 0,
+                            return CustomScrollView(
+                              controller: scrollController,
+                              physics: const AlwaysScrollableScrollPhysics(),
+                              slivers: [
+                                const SliverToBoxAdapter(child: SizedBox(height: Dimensions.paddingSizeSmall)),
+                                const HomeSearchWidget(),
+                                SliverToBoxAdapter(
+                                  child: Center(
+                                    child: SizedBox(
+                                      width: Dimensions.webMaxWidth,
+                                      child: Column(
+                                        children: [
+                                          const BannerView(),
+                                          availableServiceCount > 0
+                                              ? Column(
+                                                  children: [
+                                                    const Padding(
+                                                      padding: EdgeInsets.symmetric(horizontal: Dimensions.paddingSizeDefault),
+                                                      child: CategoryView(),
+                                                    ),
+                                                    const Padding(
+                                                      padding: EdgeInsets.symmetric(horizontal: Dimensions.paddingSizeDefault),
+                                                      child: HighlightProviderWidget(),
+                                                    ),
+                                                    const SizedBox(height: Dimensions.paddingSizeLarge),
+                                                    HorizontalScrollServiceView(
+                                                      fromPage: 'popular_services',
+                                                      serviceList: serviceController.popularServiceList,
+                                                    ),
+                                                    const RandomCampaignView(),
+                                                    const SizedBox(height: Dimensions.paddingSizeLarge),
+                                                    const RecommendedServiceView(height: 215),
+                                                    if (providerBooking == 1 && (isAvailableProvider || providerController.providerList == null))
+                                                      Padding(
+                                                        padding: const EdgeInsets.symmetric(horizontal: Dimensions.paddingSizeDefault, vertical: Dimensions.paddingSizeLarge),
+                                                        child: SizedBox(
+                                                          height: 180,
+                                                          child: ExploreProviderCard(showShimmer: providerController.providerList == null),
+                                                        ),
+                                                      ),
+                                                    if (Get.find<SplashController>().configModel.content?.directProviderBooking == 1)
+                                                      const HomeRecommendProvider(height: 235),
+                                                    if (Get.find<SplashController>().configModel.content!.biddingStatus == 1)
+                                                      if (serviceController.allService != null && serviceController.allService!.isNotEmpty)
+                                                        const Padding(
+                                                          padding: EdgeInsets.symmetric(horizontal: Dimensions.paddingSizeDefault, vertical: Dimensions.paddingSizeLarge),
+                                                          child: HomeCreatePostView(showShimmer: false),
+                                                        ),
+                                                    if (Get.find<AuthController>().isLoggedIn())
+                                                      HorizontalScrollServiceView(
+                                                        fromPage: 'recently_view_services',
+                                                        serviceList: serviceController.recentlyViewServiceList,
+                                                      ),
+                                                    const CampaignView(),
+                                                    HorizontalScrollServiceView(
+                                                      fromPage: 'trending_services',
+                                                      serviceList: serviceController.trendingServiceList,
+                                                    ),
+                                                    const FeatheredCategoryView(),
+                                                    if (serviceController.allService != null && serviceController.allService!.isNotEmpty)
+                                                      if (ResponsiveHelper.isMobile(context) || ResponsiveHelper.isTab(context))
+                                                        Padding(
+                                                          padding: const EdgeInsets.fromLTRB(Dimensions.paddingSizeDefault, 15, Dimensions.paddingSizeDefault, Dimensions.paddingSizeSmall),
+                                                          child: TitleWidget(
+                                                            textDecoration: TextDecoration.underline,
+                                                            title: 'all_service'.tr,
+                                                            onTap: () => Get.toNamed(RouteHelper.getSearchResultRoute()),
+                                                          ),
+                                                        ),
+                                                    PaginatedListView(
+                                                      scrollController: scrollController,
+                                                      totalSize: serviceController.serviceContent?.total,
+                                                      offset: serviceController.serviceContent?.currentPage,
+                                                      onPaginate: (int offset) async => await serviceController.getAllServiceList(offset, false),
+                                                      showBottomSheet: true,
+                                                      itemView: ServiceViewVertical(
+                                                        service: serviceController.serviceContent != null ? serviceController.allService : null,
+                                                        padding: EdgeInsets.symmetric(
+                                                          horizontal: ResponsiveHelper.isDesktop(context) ? Dimensions.paddingSizeExtraSmall : Dimensions.paddingSizeDefault,
+                                                          vertical: ResponsiveHelper.isDesktop(context) ? Dimensions.paddingSizeExtraSmall : 0,
+                                                        ),
+                                                        type: 'others',
+                                                        noDataType: NoDataType.home,
+                                                      ),
+                                                    ),
+                                                  ],
+                                                )
+                                              : SizedBox(
+                                                  height: MediaQuery.of(context).size.height * .6,
+                                                  child: const ServiceNotAvailableScreen(),
+                                                ),
+                                        ],
+                                      ),
+                                    ),
+                                  ),
                                 ),
-                                type: 'others',
-                                noDataType: NoDataType.home,
-                              ),
-                            ),
-                          ],) : SizedBox( height: MediaQuery.of(context).size.height*.6, child: const ServiceNotAvailableScreen())
-
-                        ]))),
-                      ),
-                    ],
-                  );
-                });
-              });
-            })
+                              ],
+                            );
+                          },
+                        );
+                      },
+                    );
+                  },
+                );
+              },
+            ),
           ),
         ),
       ),
     );
   }
 
-   void _showModalBottomSheet(BuildContext context) {
+  void _showModalBottomSheet(BuildContext context) {
     showDialog(
       context: context,
       builder: (BuildContext context) {
@@ -287,4 +308,3 @@ class _HomeScreenState extends State<HomeScreen> {
     );
   }
 }
-
