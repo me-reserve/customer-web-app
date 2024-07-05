@@ -118,6 +118,7 @@ class _MyAppState extends State<MyApp> {
 
         if (!Get.find<AuthController>().isLoggedIn()) {
            Get.offNamed(RouteHelper.getNotLoggedScreen(RouteHelper.main, "Login"));
+           return;
         }
 
       if (isSuccess) {
@@ -149,6 +150,8 @@ class _MyAppState extends State<MyApp> {
     }
   }
 
+  
+
   @override
   Widget build(BuildContext context) {
 
@@ -157,7 +160,9 @@ class _MyAppState extends State<MyApp> {
         return GetBuilder<SplashController>(builder: (splashController) {
           if ((GetPlatform.isWeb && splashController.configModel.content == null)) {
             return const SizedBox();
-          } else {return GetMaterialApp(
+          } else {
+            return GetMaterialApp(
+            
 
             // localizationsDelegates: const [
             //   GlobalMaterialLocalizations.delegate,
@@ -176,7 +181,7 @@ class _MyAppState extends State<MyApp> {
             locale: localizeController.locale,
             translations: Messages(languages: widget.languages),
             fallbackLocale: Locale(AppConstants.languages[0].languageCode!, AppConstants.languages[0].countryCode),
-            initialRoute: GetPlatform.isWeb ? RouteHelper.getInitialRoute(fromPage: "main") : RouteHelper.getSplashRoute(widget.body, widget.route),
+            initialRoute: Get.find<AuthController>().isLoggedIn() ?  GetPlatform.isWeb ? RouteHelper.getInitialRoute(fromPage: "main") : RouteHelper.getSplashRoute(widget.body, widget.route) : RouteHelper.getNotLoggedScreen( GetPlatform.isWeb ? RouteHelper.main : RouteHelper.getSplashRoute(widget.body, widget.route) , "Login"),
             getPages: RouteHelper.routes,
             defaultTransition: Transition.topLevel,
             transitionDuration: const Duration(milliseconds: 500),
@@ -206,9 +211,6 @@ class _MyAppState extends State<MyApp> {
 class MyHttpOverrides extends HttpOverrides {
   @override
   HttpClient createHttpClient(SecurityContext? context) {
-            if (!Get.find<AuthController>().isLoggedIn()) {
-           Get.offNamed(RouteHelper.getNotLoggedScreen(RouteHelper.main, "Login"));
-        }
     return super.createHttpClient(context)..badCertificateCallback = (X509Certificate cert, String host, int port) => true;
   }
 }
