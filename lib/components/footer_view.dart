@@ -1,6 +1,6 @@
-import 'package:demandium/feature/web_landing/model/web_landing_model.dart';
+import 'package:me_reserve_bem_estar/feature/web_landing/model/web_landing_model.dart';
 import 'package:get/get.dart';
-import 'package:demandium/components/core_export.dart';
+import 'package:me_reserve_bem_estar/components/core_export.dart';
 
 
 class FooterView extends StatefulWidget {

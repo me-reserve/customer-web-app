@@ -1,7 +1,7 @@
-import 'package:demandium/core/helper/checkout_helper.dart';
+import 'package:me_reserve_bem_estar/core/helper/checkout_helper.dart';
 import 'package:get/get.dart';
-import 'package:demandium/components/core_export.dart';
-import  'package:demandium/feature/provider/model/provider_model.dart';
+import 'package:me_reserve_bem_estar/components/core_export.dart';
+import  'package:me_reserve_bem_estar/feature/provider/model/provider_model.dart';
 
 
 

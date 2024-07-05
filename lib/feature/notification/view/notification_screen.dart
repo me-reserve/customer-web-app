@@ -1,20 +1,20 @@
-import 'package:demandium/components/footer_base_view.dart';
-import 'package:demandium/components/image_dialog.dart';
-import 'package:demandium/components/menu_drawer.dart';
-import 'package:demandium/components/paginated_list_view.dart';
-import 'package:demandium/components/web_shadow_wrap.dart';
-import 'package:demandium/core/helper/responsive_helper.dart';
+import 'package:me_reserve_bem_estar/components/footer_base_view.dart';
+import 'package:me_reserve_bem_estar/components/image_dialog.dart';
+import 'package:me_reserve_bem_estar/components/menu_drawer.dart';
+import 'package:me_reserve_bem_estar/components/paginated_list_view.dart';
+import 'package:me_reserve_bem_estar/components/web_shadow_wrap.dart';
+import 'package:me_reserve_bem_estar/core/helper/responsive_helper.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:demandium/components/custom_app_bar.dart';
-import 'package:demandium/components/custom_image.dart';
-import 'package:demandium/core/helper/date_converter.dart';
-import 'package:demandium/feature/notification/controller/notification_controller.dart';
-import 'package:demandium/feature/notification/widget/notification_shimmer.dart';
-import 'package:demandium/feature/root/view/no_data_screen.dart';
-import 'package:demandium/feature/splash/controller/splash_controller.dart';
-import 'package:demandium/utils/dimensions.dart';
-import 'package:demandium/utils/styles.dart';
+import 'package:me_reserve_bem_estar/components/custom_app_bar.dart';
+import 'package:me_reserve_bem_estar/components/custom_image.dart';
+import 'package:me_reserve_bem_estar/core/helper/date_converter.dart';
+import 'package:me_reserve_bem_estar/feature/notification/controller/notification_controller.dart';
+import 'package:me_reserve_bem_estar/feature/notification/widget/notification_shimmer.dart';
+import 'package:me_reserve_bem_estar/feature/root/view/no_data_screen.dart';
+import 'package:me_reserve_bem_estar/feature/splash/controller/splash_controller.dart';
+import 'package:me_reserve_bem_estar/utils/dimensions.dart';
+import 'package:me_reserve_bem_estar/utils/styles.dart';
 
 class NotificationScreen extends StatefulWidget {
   const NotificationScreen({super.key}) ;

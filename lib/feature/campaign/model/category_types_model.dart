@@ -1,4 +1,4 @@
-import 'package:demandium/feature/category/model/category_model.dart';
+import 'package:me_reserve_bem_estar/feature/category/model/category_model.dart';
 
 class CategoryTypesModel {
   int? id;

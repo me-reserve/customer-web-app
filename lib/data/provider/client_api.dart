@@ -2,8 +2,8 @@ import 'dart:convert';
 import 'package:file_picker/file_picker.dart';
 import 'package:http/http.dart' as http;
 import 'package:get/get.dart';
-import 'package:demandium/core/common_model/errrors_model.dart';
-import 'package:demandium/components/core_export.dart';
+import 'package:me_reserve_bem_estar/core/common_model/errrors_model.dart';
+import 'package:me_reserve_bem_estar/components/core_export.dart';
 import 'package:path/path.dart';
 import 'package:flutter/foundation.dart' as foundation;
 

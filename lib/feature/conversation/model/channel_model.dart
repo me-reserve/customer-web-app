@@ -1,5 +1,5 @@
 
-import 'package:demandium/feature/conversation/model/conversation_user.dart';
+import 'package:me_reserve_bem_estar/feature/conversation/model/conversation_user.dart';
 
 class ChannelModel {
   String? responseCode;

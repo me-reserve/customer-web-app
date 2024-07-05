@@ -1,7 +1,7 @@
-import 'package:demandium/core/helper/image_size_checker.dart';
-import 'package:demandium/core/helper/phone_verification_helper.dart';
+import 'package:me_reserve_bem_estar/core/helper/image_size_checker.dart';
+import 'package:me_reserve_bem_estar/core/helper/phone_verification_helper.dart';
 import 'package:get/get.dart';
-import 'package:demandium/components/core_export.dart';
+import 'package:me_reserve_bem_estar/components/core_export.dart';
 
 enum EditProfileTabControllerState {generalInfo,accountIno}
 

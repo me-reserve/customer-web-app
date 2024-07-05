@@ -1,7 +1,7 @@
 
 import 'package:get/get.dart';
-import 'package:demandium/components/core_export.dart';
-import 'package:demandium/feature/service/repository/service_details_repo.dart';
+import 'package:me_reserve_bem_estar/components/core_export.dart';
+import 'package:me_reserve_bem_estar/feature/service/repository/service_details_repo.dart';
 
 enum ServiceTabControllerState {serviceOverview,faq,review}
 

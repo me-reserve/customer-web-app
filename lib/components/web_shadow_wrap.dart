@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:demandium/core/helper/responsive_helper.dart';
-import 'package:demandium/utils/dimensions.dart';
+import 'package:me_reserve_bem_estar/core/helper/responsive_helper.dart';
+import 'package:me_reserve_bem_estar/utils/dimensions.dart';
 
 class WebShadowWrap extends StatelessWidget {
   final Widget child;

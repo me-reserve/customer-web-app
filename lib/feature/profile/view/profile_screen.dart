@@ -1,6 +1,6 @@
 import 'package:get/get.dart';
-import 'package:demandium/feature/profile/model/profile_cart_item_model.dart';
-import 'package:demandium/components/core_export.dart';
+import 'package:me_reserve_bem_estar/feature/profile/model/profile_cart_item_model.dart';
+import 'package:me_reserve_bem_estar/components/core_export.dart';
 
 class ProfileScreen extends StatefulWidget{
   const ProfileScreen({super.key}) ;

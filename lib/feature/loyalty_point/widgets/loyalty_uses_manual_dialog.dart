@@ -1,6 +1,6 @@
-import 'package:demandium/components/core_export.dart';
-import 'package:demandium/feature/loyalty_point/controller/loyalty_point_controller.dart';
-import 'package:demandium/feature/loyalty_point/repository/loyalty_point_repo.dart';
+import 'package:me_reserve_bem_estar/components/core_export.dart';
+import 'package:me_reserve_bem_estar/feature/loyalty_point/controller/loyalty_point_controller.dart';
+import 'package:me_reserve_bem_estar/feature/loyalty_point/repository/loyalty_point_repo.dart';
 import 'package:get/get.dart';
 
 class LoyaltyPointUsesManualDialog extends StatelessWidget {

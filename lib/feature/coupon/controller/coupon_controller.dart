@@ -1,4 +1,4 @@
-import 'package:demandium/feature/coupon/widgets/custom_coupon_snackber.dart';
+import 'package:me_reserve_bem_estar/feature/coupon/widgets/custom_coupon_snackber.dart';
 import 'package:get/get.dart';
 import '../../../components/core_export.dart';
 

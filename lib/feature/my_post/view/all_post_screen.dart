@@ -1,5 +1,5 @@
-import 'package:demandium/components/core_export.dart';
-import 'package:demandium/feature/my_post/widgets/my_post_view.dart';
+import 'package:me_reserve_bem_estar/components/core_export.dart';
+import 'package:me_reserve_bem_estar/feature/my_post/widgets/my_post_view.dart';
 import 'package:get/get.dart';
 
 class AllPostScreen extends StatelessWidget {

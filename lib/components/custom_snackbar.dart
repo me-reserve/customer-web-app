@@ -1,5 +1,5 @@
 import 'package:get/get.dart';
-import 'package:demandium/components/core_export.dart';
+import 'package:me_reserve_bem_estar/components/core_export.dart';
 
 void customSnackBar(String? message, {bool isError = true, double margin = Dimensions.paddingSizeSmall,int duration =2, Color? backgroundColor, Widget? customWidget, double borderRadius = Dimensions.radiusSmall}) {
   if(message != null && message.isNotEmpty) {

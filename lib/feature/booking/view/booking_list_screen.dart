@@ -1,7 +1,7 @@
 import 'package:get/get.dart';
-import 'package:demandium/components/core_export.dart';
-import 'package:demandium/feature/booking/widget/booking_item_card.dart';
-import 'package:demandium/feature/booking/widget/booking_status_tabs.dart';
+import 'package:me_reserve_bem_estar/components/core_export.dart';
+import 'package:me_reserve_bem_estar/feature/booking/widget/booking_item_card.dart';
+import 'package:me_reserve_bem_estar/feature/booking/widget/booking_status_tabs.dart';
 
 class BookingListScreen extends StatefulWidget {
   final bool isFromMenu;

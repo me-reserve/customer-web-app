@@ -1,11 +1,11 @@
 {
-    "name": "Demandium",
-    "short_name": "Demandium",
+    "name": "Me Reserve Bem-Estar",
+    "short_name": "MR Bem-Estar",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",
     "theme_color": "#0175C2",
-    "description": "A complete on-demand booking service platform.",
+    "description": "A melhor plataforma de beneficios.",
     "orientation": "portrait-primary",
     "prefer_related_applications": false,
     "icons": [

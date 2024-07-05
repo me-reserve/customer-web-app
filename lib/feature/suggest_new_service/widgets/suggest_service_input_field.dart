@@ -1,6 +1,6 @@
-import 'package:demandium/components/text_field_title.dart';
-import 'package:demandium/components/core_export.dart';
-import 'package:demandium/feature/suggest_new_service/controller/suggest_service_controller.dart';
+import 'package:me_reserve_bem_estar/components/text_field_title.dart';
+import 'package:me_reserve_bem_estar/components/core_export.dart';
+import 'package:me_reserve_bem_estar/feature/suggest_new_service/controller/suggest_service_controller.dart';
 import 'package:get/get.dart';
 
 class SuggestServiceInputField extends StatefulWidget {

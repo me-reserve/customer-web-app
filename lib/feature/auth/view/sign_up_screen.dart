@@ -1,7 +1,7 @@
 import 'package:country_code_picker/country_code_picker.dart';
-import 'package:demandium/feature/auth/widgets/social_login_widget.dart';
+import 'package:me_reserve_bem_estar/feature/auth/widgets/social_login_widget.dart';
 import 'package:get/get.dart';
-import 'package:demandium/components/core_export.dart';
+import 'package:me_reserve_bem_estar/components/core_export.dart';
 
 class SignUpScreen extends StatefulWidget {
    const SignUpScreen({super.key}) ;

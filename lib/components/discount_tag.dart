@@ -1,7 +1,7 @@
-import 'package:demandium/core/helper/price_converter.dart';
+import 'package:me_reserve_bem_estar/core/helper/price_converter.dart';
 import 'package:flutter/material.dart';
-import 'package:demandium/utils/dimensions.dart';
-import 'package:demandium/utils/styles.dart';
+import 'package:me_reserve_bem_estar/utils/dimensions.dart';
+import 'package:me_reserve_bem_estar/utils/styles.dart';
 
 class DiscountTag extends StatelessWidget {
   final num? discount;

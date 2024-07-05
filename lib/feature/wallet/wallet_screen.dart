@@ -1,10 +1,10 @@
-import 'package:demandium/components/core_export.dart';
-import 'package:demandium/feature/wallet/controller/wallet_controller.dart';
-import 'package:demandium/feature/wallet/wallet_screen_web.dart';
-import 'package:demandium/feature/wallet/widgets/wallet_promotional_banner.dart';
-import 'package:demandium/feature/wallet/widgets/wallet_top_card.dart';
-import 'package:demandium/feature/wallet/widgets/wallet_list_view.dart';
-import 'package:demandium/feature/wallet/widgets/wallet_uses_manual_dialog.dart';
+import 'package:me_reserve_bem_estar/components/core_export.dart';
+import 'package:me_reserve_bem_estar/feature/wallet/controller/wallet_controller.dart';
+import 'package:me_reserve_bem_estar/feature/wallet/wallet_screen_web.dart';
+import 'package:me_reserve_bem_estar/feature/wallet/widgets/wallet_promotional_banner.dart';
+import 'package:me_reserve_bem_estar/feature/wallet/widgets/wallet_top_card.dart';
+import 'package:me_reserve_bem_estar/feature/wallet/widgets/wallet_list_view.dart';
+import 'package:me_reserve_bem_estar/feature/wallet/widgets/wallet_uses_manual_dialog.dart';
 import 'package:get/get.dart';
 import 'package:just_the_tooltip/just_the_tooltip.dart';
 

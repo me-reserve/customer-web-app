@@ -1,8 +1,8 @@
 import 'package:chewie/chewie.dart';
-import 'package:demandium/components/core_export.dart';
-import 'package:demandium/components/favorite_icon_widget.dart';
-import 'package:demandium/feature/home/controller/advertisement_controller.dart';
-import 'package:demandium/feature/home/model/advertisement_model.dart';
+import 'package:me_reserve_bem_estar/components/core_export.dart';
+import 'package:me_reserve_bem_estar/components/favorite_icon_widget.dart';
+import 'package:me_reserve_bem_estar/feature/home/controller/advertisement_controller.dart';
+import 'package:me_reserve_bem_estar/feature/home/model/advertisement_model.dart';
 import 'package:get/get.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 import 'package:video_player/video_player.dart';

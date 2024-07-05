@@ -1,7 +1,7 @@
-import 'package:demandium/feature/home/widget/explore_provider_card.dart';
-import 'package:demandium/feature/home/widget/highlight_provider_widget.dart';
+import 'package:me_reserve_bem_estar/feature/home/widget/explore_provider_card.dart';
+import 'package:me_reserve_bem_estar/feature/home/widget/highlight_provider_widget.dart';
 import 'package:get/get.dart';
-import 'package:demandium/components/core_export.dart';
+import 'package:me_reserve_bem_estar/components/core_export.dart';
 
 
 class WebHomeScreen extends StatelessWidget {

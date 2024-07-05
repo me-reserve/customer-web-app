@@ -1,7 +1,7 @@
-import 'package:demandium/components/core_export.dart';
-import 'package:demandium/feature/search/widget/already_filtered_widget.dart';
-import 'package:demandium/feature/search/widget/service_filter_dialog.dart';
-import 'package:demandium/feature/search/widget/service_sort_dialog.dart';
+import 'package:me_reserve_bem_estar/components/core_export.dart';
+import 'package:me_reserve_bem_estar/feature/search/widget/already_filtered_widget.dart';
+import 'package:me_reserve_bem_estar/feature/search/widget/service_filter_dialog.dart';
+import 'package:me_reserve_bem_estar/feature/search/widget/service_sort_dialog.dart';
 import 'package:get/get.dart';
 
 class SearchFilterButtonWidget extends StatelessWidget {

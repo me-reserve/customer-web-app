@@ -1,6 +1,6 @@
-import 'package:demandium/feature/web_landing/web_landing_screen.dart';
+import 'package:me_reserve_bem_estar/feature/web_landing/web_landing_screen.dart';
 import 'package:get/get.dart';
-import 'package:demandium/components/core_export.dart';
+import 'package:me_reserve_bem_estar/components/core_export.dart';
 
 class AccessLocationScreen extends StatefulWidget {
   final bool? fromSignUp;

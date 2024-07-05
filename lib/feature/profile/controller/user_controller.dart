@@ -1,7 +1,7 @@
 import 'dart:convert';
 
 import 'package:get/get.dart';
-import 'package:demandium/components/core_export.dart';
+import 'package:me_reserve_bem_estar/components/core_export.dart';
 import 'package:timeago/timeago.dart' as timeago;
 import 'package:http/http.dart' as http;
 

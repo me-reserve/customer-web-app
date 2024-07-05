@@ -1,4 +1,4 @@
-import 'package:demandium/components/core_export.dart';
+import 'package:me_reserve_bem_estar/components/core_export.dart';
 
 class RippleButton extends StatelessWidget {
   const RippleButton({super.key, required this.onTap, this.borderRadius = 5}) ;

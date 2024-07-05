@@ -1,9 +1,9 @@
 
-import 'package:demandium/components/custom_text_form_field.dart';
-import 'package:demandium/components/text_field_title.dart';
-import 'package:demandium/components/core_export.dart';
-import 'package:demandium/feature/create_post/widget/additional_instruction_dialog.dart';
-import 'package:demandium/feature/create_post/widget/subcategory_service_view.dart';
+import 'package:me_reserve_bem_estar/components/custom_text_form_field.dart';
+import 'package:me_reserve_bem_estar/components/text_field_title.dart';
+import 'package:me_reserve_bem_estar/components/core_export.dart';
+import 'package:me_reserve_bem_estar/feature/create_post/widget/additional_instruction_dialog.dart';
+import 'package:me_reserve_bem_estar/feature/create_post/widget/subcategory_service_view.dart';
 import 'package:get/get.dart';
 import 'package:just_the_tooltip/just_the_tooltip.dart';
 

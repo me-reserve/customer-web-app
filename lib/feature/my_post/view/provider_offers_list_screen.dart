@@ -1,7 +1,7 @@
-import 'package:demandium/components/core_export.dart';
-import 'package:demandium/feature/create_post/model/my_post_model.dart';
-import 'package:demandium/feature/my_post/widgets/accept_decline_request.dart';
-import 'package:demandium/feature/my_post/widgets/post_details_expandable_content.dart';
+import 'package:me_reserve_bem_estar/components/core_export.dart';
+import 'package:me_reserve_bem_estar/feature/create_post/model/my_post_model.dart';
+import 'package:me_reserve_bem_estar/feature/my_post/widgets/accept_decline_request.dart';
+import 'package:me_reserve_bem_estar/feature/my_post/widgets/post_details_expandable_content.dart';
 import 'package:expandable_bottom_sheet/expandable_bottom_sheet.dart';
 import 'package:get/get.dart';
 

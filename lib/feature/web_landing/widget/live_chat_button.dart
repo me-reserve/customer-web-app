@@ -1,8 +1,8 @@
-import 'package:demandium/core/helper/route_helper.dart';
-import 'package:demandium/feature/auth/controller/auth_controller.dart';
-import 'package:demandium/feature/splash/controller/splash_controller.dart';
-import 'package:demandium/utils/dimensions.dart';
-import 'package:demandium/utils/styles.dart';
+import 'package:me_reserve_bem_estar/core/helper/route_helper.dart';
+import 'package:me_reserve_bem_estar/feature/auth/controller/auth_controller.dart';
+import 'package:me_reserve_bem_estar/feature/splash/controller/splash_controller.dart';
+import 'package:me_reserve_bem_estar/utils/dimensions.dart';
+import 'package:me_reserve_bem_estar/utils/styles.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:url_launcher/url_launcher.dart';

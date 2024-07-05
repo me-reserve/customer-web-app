@@ -1,6 +1,6 @@
-// import 'package:demandium/components/core_export.dart';
-// import 'package:demandium/feature/search/widget/recommended_search.dart';
-// import 'package:demandium/feature/search/widget/suggested_search.dart';
+// import 'package:me_reserve_bem_estar/components/core_export.dart';
+// import 'package:me_reserve_bem_estar/feature/search/widget/recommended_search.dart';
+// import 'package:me_reserve_bem_estar/feature/search/widget/suggested_search.dart';
 // import 'recent_search.dart';
 //
 // class SearchSuggestion extends StatelessWidget {

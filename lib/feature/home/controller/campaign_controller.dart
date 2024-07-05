@@ -1,6 +1,6 @@
 import 'package:get/get.dart';
-import 'package:demandium/components/core_export.dart';
-import 'package:demandium/feature/home/model/campaign_model.dart';
+import 'package:me_reserve_bem_estar/components/core_export.dart';
+import 'package:me_reserve_bem_estar/feature/home/model/campaign_model.dart';
 
 class CampaignController extends GetxController implements GetxService {
   final CampaignRepo campaignRepo;

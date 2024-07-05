@@ -1,6 +1,6 @@
-import 'package:demandium/components/core_export.dart';
-import 'package:demandium/feature/cart/widget/available_provider_widgets.dart';
-import 'package:demandium/feature/provider/model/provider_model.dart';
+import 'package:me_reserve_bem_estar/components/core_export.dart';
+import 'package:me_reserve_bem_estar/feature/cart/widget/available_provider_widgets.dart';
+import 'package:me_reserve_bem_estar/feature/provider/model/provider_model.dart';
 import 'package:get/get.dart';
 
 class ProviderDetailsCard extends StatelessWidget {

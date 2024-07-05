@@ -1,7 +1,7 @@
 import 'dart:isolate';
 import 'dart:ui';
-import 'package:demandium/components/core_export.dart';
-import 'package:demandium/utils/color_resources.dart';
+import 'package:me_reserve_bem_estar/components/core_export.dart';
+import 'package:me_reserve_bem_estar/utils/color_resources.dart';
 import 'package:flutter_downloader/flutter_downloader.dart';
 import 'package:get/get.dart';
 import 'package:path_provider/path_provider.dart';

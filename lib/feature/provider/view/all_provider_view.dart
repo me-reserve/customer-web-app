@@ -1,6 +1,6 @@
-import 'package:demandium/components/core_export.dart';
-import 'package:demandium/feature/provider/widgets/provider_filter_view.dart';
-import 'package:demandium/feature/provider/widgets/provider_item_view.dart';
+import 'package:me_reserve_bem_estar/components/core_export.dart';
+import 'package:me_reserve_bem_estar/feature/provider/widgets/provider_filter_view.dart';
+import 'package:me_reserve_bem_estar/feature/provider/widgets/provider_item_view.dart';
 import 'package:get/get.dart';
 
 class AllProviderView extends StatefulWidget {

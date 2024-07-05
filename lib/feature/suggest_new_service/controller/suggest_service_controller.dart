@@ -1,6 +1,6 @@
-import 'package:demandium/components/core_export.dart';
-import 'package:demandium/feature/suggest_new_service/model/suggest_service_model.dart';
-import 'package:demandium/feature/suggest_new_service/repository/suggest_service_repo.dart';
+import 'package:me_reserve_bem_estar/components/core_export.dart';
+import 'package:me_reserve_bem_estar/feature/suggest_new_service/model/suggest_service_model.dart';
+import 'package:me_reserve_bem_estar/feature/suggest_new_service/repository/suggest_service_repo.dart';
 import 'package:get/get.dart';
 
 class SuggestServiceController extends GetxController{

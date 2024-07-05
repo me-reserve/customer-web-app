@@ -1,6 +1,6 @@
 import 'package:get/get.dart';
-import 'package:demandium/feature/review/controller/submit_review_controller.dart';
-import 'package:demandium/feature/review/repo/submit_review_repo.dart';
+import 'package:me_reserve_bem_estar/feature/review/controller/submit_review_controller.dart';
+import 'package:me_reserve_bem_estar/feature/review/repo/submit_review_repo.dart';
 
 class SubmitReviewBinding extends Bindings{
   @override

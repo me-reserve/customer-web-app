@@ -1,5 +1,5 @@
-import 'package:demandium/components/core_export.dart';
-import 'package:demandium/feature/checkout/model/offline_payment_method_model.dart';
+import 'package:me_reserve_bem_estar/components/core_export.dart';
+import 'package:me_reserve_bem_estar/feature/checkout/model/offline_payment_method_model.dart';
 import 'package:get/get.dart';
 import 'package:scroll_to_index/scroll_to_index.dart';
 

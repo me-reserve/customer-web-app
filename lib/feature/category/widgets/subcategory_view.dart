@@ -1,6 +1,6 @@
 import 'package:get/get.dart';
-import 'package:demandium/components/core_export.dart';
-import 'package:demandium/feature/category/widgets/sub_category_widget.dart';
+import 'package:me_reserve_bem_estar/components/core_export.dart';
+import 'package:me_reserve_bem_estar/feature/category/widgets/sub_category_widget.dart';
 
 class SubCategoryView extends GetView<CategoryController> {
   final EdgeInsetsGeometry? padding;

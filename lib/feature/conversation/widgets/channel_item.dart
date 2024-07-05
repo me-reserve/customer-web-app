@@ -1,6 +1,6 @@
-import 'package:demandium/components/core_export.dart';
-import 'package:demandium/components/custom_inkwell.dart';
-import 'package:demandium/feature/conversation/model/conversation_user.dart';
+import 'package:me_reserve_bem_estar/components/core_export.dart';
+import 'package:me_reserve_bem_estar/components/custom_inkwell.dart';
+import 'package:me_reserve_bem_estar/feature/conversation/model/conversation_user.dart';
 import 'package:get/get.dart';
 
 

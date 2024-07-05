@@ -1,7 +1,7 @@
-import 'package:demandium/feature/wallet/controller/wallet_controller.dart';
-import 'package:demandium/feature/wallet/widgets/wallet_banner_view.dart';
+import 'package:me_reserve_bem_estar/feature/wallet/controller/wallet_controller.dart';
+import 'package:me_reserve_bem_estar/feature/wallet/widgets/wallet_banner_view.dart';
 import 'package:get/get.dart';
-import 'package:demandium/components/core_export.dart';
+import 'package:me_reserve_bem_estar/components/core_export.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 
 class WalletPromotionalBannerView extends StatelessWidget {

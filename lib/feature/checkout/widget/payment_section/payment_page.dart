@@ -1,7 +1,7 @@
-import 'package:demandium/feature/checkout/model/offline_payment_method_model.dart';
-import 'package:demandium/feature/checkout/widget/payment_section/offline_payment_dialog.dart';
+import 'package:me_reserve_bem_estar/feature/checkout/model/offline_payment_method_model.dart';
+import 'package:me_reserve_bem_estar/feature/checkout/widget/payment_section/offline_payment_dialog.dart';
 import 'package:get/get.dart';
-import 'package:demandium/components/core_export.dart';
+import 'package:me_reserve_bem_estar/components/core_export.dart';
 import 'package:just_the_tooltip/just_the_tooltip.dart';
 
 

@@ -1,4 +1,4 @@
-import 'package:demandium/feature/loyalty_point/model/loyalty_point_model.dart';
+import 'package:me_reserve_bem_estar/feature/loyalty_point/model/loyalty_point_model.dart';
 
 class WalletTransactionModel {
 

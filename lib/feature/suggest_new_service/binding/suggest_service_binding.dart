@@ -1,5 +1,5 @@
-import 'package:demandium/feature/suggest_new_service/controller/suggest_service_controller.dart';
-import 'package:demandium/feature/suggest_new_service/repository/suggest_service_repo.dart';
+import 'package:me_reserve_bem_estar/feature/suggest_new_service/controller/suggest_service_controller.dart';
+import 'package:me_reserve_bem_estar/feature/suggest_new_service/repository/suggest_service_repo.dart';
 import 'package:get/get.dart';
 
 class SuggestServiceBinding extends Bindings{

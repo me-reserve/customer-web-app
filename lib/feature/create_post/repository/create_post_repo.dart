@@ -1,6 +1,6 @@
-import 'package:demandium/data/provider/client_api.dart';
-import 'package:demandium/feature/create_post/model/create_post_body.dart';
-import 'package:demandium/utils/app_constants.dart';
+import 'package:me_reserve_bem_estar/data/provider/client_api.dart';
+import 'package:me_reserve_bem_estar/feature/create_post/model/create_post_body.dart';
+import 'package:me_reserve_bem_estar/utils/app_constants.dart';
 import 'package:get/get.dart';
 
 class CreatePostRepo{

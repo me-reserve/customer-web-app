@@ -1,6 +1,6 @@
-import 'package:demandium/components/core_export.dart';
-import 'package:demandium/feature/checkout/widget/order_details_section/provider_details_card.dart';
-import 'package:demandium/feature/checkout/widget/order_details_section/wallet_payment_card.dart';
+import 'package:me_reserve_bem_estar/components/core_export.dart';
+import 'package:me_reserve_bem_estar/feature/checkout/widget/order_details_section/provider_details_card.dart';
+import 'package:me_reserve_bem_estar/feature/checkout/widget/order_details_section/wallet_payment_card.dart';
 import 'package:get/get.dart';
 
 class OrderDetailsPageWeb extends StatelessWidget {

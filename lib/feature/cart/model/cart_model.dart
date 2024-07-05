@@ -1,5 +1,5 @@
-import 'package:demandium/feature/provider/model/provider_model.dart';
-import 'package:demandium/feature/service/model/service_model.dart';
+import 'package:me_reserve_bem_estar/feature/provider/model/provider_model.dart';
+import 'package:me_reserve_bem_estar/feature/service/model/service_model.dart';
 
 class CartModel {
   String? _id;

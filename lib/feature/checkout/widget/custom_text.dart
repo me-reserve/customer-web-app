@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:demandium/utils/styles.dart';
+import 'package:me_reserve_bem_estar/utils/styles.dart';
 
 class CustomText extends StatelessWidget {
   final String text;

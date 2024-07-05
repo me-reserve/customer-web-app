@@ -1,7 +1,7 @@
 import 'package:get/get.dart';
-import 'package:demandium/components/custom_snackbar.dart';
-import 'package:demandium/core/helper/route_helper.dart';
-import 'package:demandium/feature/auth/controller/auth_controller.dart';
+import 'package:me_reserve_bem_estar/components/custom_snackbar.dart';
+import 'package:me_reserve_bem_estar/core/helper/route_helper.dart';
+import 'package:me_reserve_bem_estar/feature/auth/controller/auth_controller.dart';
 
 class ApiChecker {
   static void checkApi(Response response) {

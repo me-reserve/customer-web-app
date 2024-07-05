@@ -1,11 +1,11 @@
 // ignore_for_file: deprecated_member_use
 
-import 'package:demandium/feature/conversation/widgets/conversation_bubble_widget.dart';
-import 'package:demandium/feature/conversation/widgets/conversation_details_appbar.dart';
-import 'package:demandium/feature/conversation/widgets/conversation_details_shimmer.dart';
-import 'package:demandium/feature/conversation/widgets/conversation_send_message_widget.dart';
+import 'package:me_reserve_bem_estar/feature/conversation/widgets/conversation_bubble_widget.dart';
+import 'package:me_reserve_bem_estar/feature/conversation/widgets/conversation_details_appbar.dart';
+import 'package:me_reserve_bem_estar/feature/conversation/widgets/conversation_details_shimmer.dart';
+import 'package:me_reserve_bem_estar/feature/conversation/widgets/conversation_send_message_widget.dart';
 import 'package:get/get.dart';
-import 'package:demandium/components/core_export.dart';
+import 'package:me_reserve_bem_estar/components/core_export.dart';
 
 
 

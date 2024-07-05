@@ -1,7 +1,7 @@
 import 'package:get/get.dart';
-import 'package:demandium/feature/review/controller/submit_review_controller.dart';
-import 'package:demandium/feature/review/widgets/select_rating.dart';
-import 'package:demandium/components/core_export.dart';
+import 'package:me_reserve_bem_estar/feature/review/controller/submit_review_controller.dart';
+import 'package:me_reserve_bem_estar/feature/review/widgets/select_rating.dart';
+import 'package:me_reserve_bem_estar/components/core_export.dart';
 
 class RateReviewScreen extends StatefulWidget{
   final String id;

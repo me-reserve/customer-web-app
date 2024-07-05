@@ -1,7 +1,7 @@
 import 'dart:convert';
-import 'package:demandium/components/core_export.dart';
-import 'package:demandium/feature/checkout/view/payment_screen.dart';
-import 'package:demandium/feature/wallet/controller/wallet_controller.dart';
+import 'package:me_reserve_bem_estar/components/core_export.dart';
+import 'package:me_reserve_bem_estar/feature/checkout/view/payment_screen.dart';
+import 'package:me_reserve_bem_estar/feature/wallet/controller/wallet_controller.dart';
 import 'package:universal_html/html.dart' as html;
 import 'package:get/get.dart';
 

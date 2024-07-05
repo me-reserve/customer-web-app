@@ -1,10 +1,10 @@
-import 'package:demandium/feature/service/widget/service_details_faq_section.dart';
-import 'package:demandium/feature/service/widget/service_details_shimmer_widget.dart';
-import 'package:demandium/feature/service/widget/service_info_card.dart';
-import 'package:demandium/feature/service/widget/service_overview.dart';
+import 'package:me_reserve_bem_estar/feature/service/widget/service_details_faq_section.dart';
+import 'package:me_reserve_bem_estar/feature/service/widget/service_details_shimmer_widget.dart';
+import 'package:me_reserve_bem_estar/feature/service/widget/service_info_card.dart';
+import 'package:me_reserve_bem_estar/feature/service/widget/service_overview.dart';
 import 'package:get/get.dart';
-import 'package:demandium/components/core_export.dart';
-import 'package:demandium/core/helper/decorated_tab_bar.dart';
+import 'package:me_reserve_bem_estar/components/core_export.dart';
+import 'package:me_reserve_bem_estar/core/helper/decorated_tab_bar.dart';
 
 class ServiceDetailsScreen extends StatefulWidget {
   final String serviceID;

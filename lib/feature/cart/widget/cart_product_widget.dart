@@ -1,6 +1,6 @@
 import 'package:flutter_slidable/flutter_slidable.dart';
 import 'package:get/get.dart';
-import 'package:demandium/components/core_export.dart';
+import 'package:me_reserve_bem_estar/components/core_export.dart';
 
 class CartServiceWidget extends StatelessWidget {
   final CartModel cart;

@@ -1,6 +1,6 @@
-import 'package:demandium/components/custom_image.dart';
-import 'package:demandium/utils/dimensions.dart';
-import 'package:demandium/utils/styles.dart';
+import 'package:me_reserve_bem_estar/components/custom_image.dart';
+import 'package:me_reserve_bem_estar/utils/dimensions.dart';
+import 'package:me_reserve_bem_estar/utils/styles.dart';
 import 'package:flutter/material.dart';
 import 'web_mid_section_content_item.dart';
 

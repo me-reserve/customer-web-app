@@ -1,6 +1,6 @@
-import 'package:demandium/core/helper/map_bound_helper.dart';
+import 'package:me_reserve_bem_estar/core/helper/map_bound_helper.dart';
 import 'package:get/get.dart';
-import 'package:demandium/components/core_export.dart';
+import 'package:me_reserve_bem_estar/components/core_export.dart';
 
 class PickMapScreen extends StatefulWidget {
   final bool? fromSignUp;

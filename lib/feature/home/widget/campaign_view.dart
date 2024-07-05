@@ -1,6 +1,6 @@
 import 'package:get/get.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
-import 'package:demandium/components/core_export.dart';
+import 'package:me_reserve_bem_estar/components/core_export.dart';
 
 class CampaignView extends StatelessWidget {
   const CampaignView({super.key});

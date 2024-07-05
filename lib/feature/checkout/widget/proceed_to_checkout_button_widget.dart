@@ -1,8 +1,8 @@
 import 'dart:convert';
-import 'package:demandium/components/core_export.dart';
-import 'package:demandium/core/helper/checkout_helper.dart';
-import 'package:demandium/feature/cart/widget/available_provider_widgets.dart';
-import 'package:demandium/feature/checkout/view/payment_screen.dart';
+import 'package:me_reserve_bem_estar/components/core_export.dart';
+import 'package:me_reserve_bem_estar/core/helper/checkout_helper.dart';
+import 'package:me_reserve_bem_estar/feature/cart/widget/available_provider_widgets.dart';
+import 'package:me_reserve_bem_estar/feature/checkout/view/payment_screen.dart';
 import 'package:universal_html/html.dart' as html;
 import 'package:get/get.dart';
 

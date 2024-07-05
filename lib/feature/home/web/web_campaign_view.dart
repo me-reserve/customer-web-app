@@ -1,5 +1,5 @@
-import 'package:demandium/components/core_export.dart';
-import 'package:demandium/feature/home/web/web_banner_shimmer.dart';
+import 'package:me_reserve_bem_estar/components/core_export.dart';
+import 'package:me_reserve_bem_estar/feature/home/web/web_banner_shimmer.dart';
 import 'package:get/get.dart';
 
 class WebCampaignView extends GetView<BannerController> {

@@ -1,6 +1,6 @@
-import 'package:demandium/feature/provider/model/provider_model.dart';
-import 'package:demandium/feature/booking/model/service_booking_model.dart';
-import 'package:demandium/feature/suggest_new_service/model/suggest_service_model.dart';
+import 'package:me_reserve_bem_estar/feature/provider/model/provider_model.dart';
+import 'package:me_reserve_bem_estar/feature/booking/model/service_booking_model.dart';
+import 'package:me_reserve_bem_estar/feature/suggest_new_service/model/suggest_service_model.dart';
 import '../../service/model/service_model.dart';
 
 class PostModel {

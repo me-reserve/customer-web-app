@@ -1,10 +1,10 @@
 import 'dart:convert';
 
-import 'package:demandium/components/core_export.dart';
-import 'package:demandium/core/helper/checkout_helper.dart';
-import 'package:demandium/core/helper/string_parser.dart';
-import 'package:demandium/feature/checkout/model/offline_payment_method_model.dart';
-import 'package:demandium/feature/checkout/widget/payment_section/payment_method_button.dart';
+import 'package:me_reserve_bem_estar/components/core_export.dart';
+import 'package:me_reserve_bem_estar/core/helper/checkout_helper.dart';
+import 'package:me_reserve_bem_estar/core/helper/string_parser.dart';
+import 'package:me_reserve_bem_estar/feature/checkout/model/offline_payment_method_model.dart';
+import 'package:me_reserve_bem_estar/feature/checkout/widget/payment_section/payment_method_button.dart';
 import 'package:get/get.dart';
 
 

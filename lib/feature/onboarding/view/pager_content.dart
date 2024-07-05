@@ -1,6 +1,6 @@
-import 'package:demandium/feature/onboarding/controller/on_board_pager_controller.dart';
+import 'package:me_reserve_bem_estar/feature/onboarding/controller/on_board_pager_controller.dart';
 import 'package:get/get.dart';
-import 'package:demandium/components/core_export.dart';
+import 'package:me_reserve_bem_estar/components/core_export.dart';
 
 class PagerContent extends StatelessWidget {
   const PagerContent({super.key, required this.image, required this.text, required this.subText, required this.topImage}) ;

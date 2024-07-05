@@ -1,6 +1,6 @@
-import 'package:demandium/feature/create_post/widget/custom_date_time_picker.dart';
+import 'package:me_reserve_bem_estar/feature/create_post/widget/custom_date_time_picker.dart';
 import 'package:get/get.dart';
-import 'package:demandium/components/core_export.dart';
+import 'package:me_reserve_bem_estar/components/core_export.dart';
 
 class ServiceSchedule extends StatefulWidget {
   const ServiceSchedule({super.key}) ;

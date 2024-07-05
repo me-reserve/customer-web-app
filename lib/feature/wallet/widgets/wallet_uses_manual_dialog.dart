@@ -1,5 +1,5 @@
-import 'package:demandium/components/core_export.dart';
-import 'package:demandium/feature/wallet/controller/wallet_controller.dart';
+import 'package:me_reserve_bem_estar/components/core_export.dart';
+import 'package:me_reserve_bem_estar/feature/wallet/controller/wallet_controller.dart';
 import 'package:get/get.dart';
 
 class WalletUsesManualDialog extends StatelessWidget {

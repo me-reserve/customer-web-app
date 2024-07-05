@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:demandium/utils/dimensions.dart';
-import 'package:demandium/utils/images.dart';
+import 'package:me_reserve_bem_estar/utils/dimensions.dart';
+import 'package:me_reserve_bem_estar/utils/images.dart';
 import 'package:get/get.dart';
 
 class ImageDialog extends StatelessWidget {

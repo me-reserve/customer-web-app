@@ -1,7 +1,7 @@
 // ignore_for_file: deprecated_member_use
 
 import 'package:app_links/app_links.dart';
-import 'package:demandium/components/cookies_view.dart';
+import 'package:me_reserve_bem_estar/components/cookies_view.dart';
 import 'package:flutter_downloader/flutter_downloader.dart';
 import 'package:flutter_local_notifications/flutter_local_notifications.dart';
 import 'package:get/get.dart';
@@ -116,6 +116,11 @@ class _MyAppState extends State<MyApp> {
         Get.find<LocationController>().saveUserAddress(addressModel);
       }
 
+        if (!Get.find<AuthController>().isLoggedIn()) {
+           Get.offNamed(RouteHelper.getNotLoggedScreen(RouteHelper.main, "Login"));
+           return;
+        }
+
       if (isSuccess) {
         if (Get.find<AuthController>().isLoggedIn()) {
           Get.find<AuthController>().updateToken();
@@ -145,6 +150,8 @@ class _MyAppState extends State<MyApp> {
     }
   }
 
+  
+
   @override
   Widget build(BuildContext context) {
 
@@ -153,7 +160,9 @@ class _MyAppState extends State<MyApp> {
         return GetBuilder<SplashController>(builder: (splashController) {
           if ((GetPlatform.isWeb && splashController.configModel.content == null)) {
             return const SizedBox();
-          } else {return GetMaterialApp(
+          } else {
+            return GetMaterialApp(
+            
 
             // localizationsDelegates: const [
             //   GlobalMaterialLocalizations.delegate,
@@ -172,7 +181,7 @@ class _MyAppState extends State<MyApp> {
             locale: localizeController.locale,
             translations: Messages(languages: widget.languages),
             fallbackLocale: Locale(AppConstants.languages[0].languageCode!, AppConstants.languages[0].countryCode),
-            initialRoute: GetPlatform.isWeb ? RouteHelper.getInitialRoute(fromPage: "main") : RouteHelper.getSplashRoute(widget.body, widget.route),
+            initialRoute: Get.find<AuthController>().isLoggedIn() ?  GetPlatform.isWeb ? RouteHelper.getInitialRoute(fromPage: "main") : RouteHelper.getSplashRoute(widget.body, widget.route) : RouteHelper.getNotLoggedScreen( GetPlatform.isWeb ? RouteHelper.main : RouteHelper.getSplashRoute(widget.body, widget.route) , "Login"),
             getPages: RouteHelper.routes,
             defaultTransition: Transition.topLevel,
             transitionDuration: const Duration(milliseconds: 500),

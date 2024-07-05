@@ -1,6 +1,6 @@
 import 'package:get/get.dart';
-import 'package:demandium/components/core_export.dart';
-import 'package:demandium/feature/campaign/model/category_types_model.dart';
+import 'package:me_reserve_bem_estar/components/core_export.dart';
+import 'package:me_reserve_bem_estar/feature/campaign/model/category_types_model.dart';
 
 class CategoryController extends GetxController implements GetxService {
   final CategoryRepo categoryRepo;

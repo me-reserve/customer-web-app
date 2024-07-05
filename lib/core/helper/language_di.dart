@@ -1,7 +1,7 @@
 import 'dart:convert';
-import 'package:demandium/feature/area/repository/service_area_repository.dart';
+import 'package:me_reserve_bem_estar/feature/area/repository/service_area_repository.dart';
 import 'package:get/get.dart';
-import 'package:demandium/components/core_export.dart';
+import 'package:me_reserve_bem_estar/components/core_export.dart';
 
 
 Future<Map<String, Map<String, String>>> init() async {

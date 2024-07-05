@@ -1,6 +1,6 @@
 import 'package:get/get.dart';
-import 'package:demandium/components/core_export.dart';
-import 'package:demandium/feature/review/controller/submit_review_controller.dart';
+import 'package:me_reserve_bem_estar/components/core_export.dart';
+import 'package:me_reserve_bem_estar/feature/review/controller/submit_review_controller.dart';
 
 class SelectRating extends StatelessWidget {
   final String revivedId;

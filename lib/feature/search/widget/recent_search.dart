@@ -1,5 +1,5 @@
-import 'package:demandium/components/core_export.dart';
-import 'package:demandium/components/extended_wrap_widget.dart';
+import 'package:me_reserve_bem_estar/components/core_export.dart';
+import 'package:me_reserve_bem_estar/components/extended_wrap_widget.dart';
 import 'package:get/get.dart';
 
 class RecentSearch extends StatelessWidget {

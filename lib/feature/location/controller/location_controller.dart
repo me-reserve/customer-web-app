@@ -1,10 +1,10 @@
 import 'dart:convert';
 import 'package:country_code_picker/country_code_picker.dart';
-import 'package:demandium/core/helper/map_bound_helper.dart';
-import 'package:demandium/feature/address/model/address_format.dart';
+import 'package:me_reserve_bem_estar/core/helper/map_bound_helper.dart';
+import 'package:me_reserve_bem_estar/feature/address/model/address_format.dart';
 import 'package:get/get.dart';
-import 'package:demandium/components/core_export.dart';
-import 'package:demandium/feature/location/model/place_details_model.dart';
+import 'package:me_reserve_bem_estar/components/core_export.dart';
+import 'package:me_reserve_bem_estar/feature/location/model/place_details_model.dart';
 
 enum Address {service, billing }
 enum AddressLabel {home, office, others }

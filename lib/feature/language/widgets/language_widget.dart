@@ -1,8 +1,8 @@
-import 'package:demandium/components/ripple_button.dart';
-import 'package:demandium/controller/localization_controller.dart';
-import 'package:demandium/data/model/response/language_model.dart';
-import 'package:demandium/utils/dimensions.dart';
-import 'package:demandium/utils/styles.dart';
+import 'package:me_reserve_bem_estar/components/ripple_button.dart';
+import 'package:me_reserve_bem_estar/controller/localization_controller.dart';
+import 'package:me_reserve_bem_estar/data/model/response/language_model.dart';
+import 'package:me_reserve_bem_estar/utils/dimensions.dart';
+import 'package:me_reserve_bem_estar/utils/styles.dart';
 import 'package:flutter/material.dart';
 
 class LanguageWidget extends StatelessWidget {

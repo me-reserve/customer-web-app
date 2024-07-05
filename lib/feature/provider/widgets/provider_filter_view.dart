@@ -1,6 +1,6 @@
-import 'package:demandium/components/core_export.dart';
-import 'package:demandium/feature/provider/widgets/custom_checkbox.dart';
-import 'package:demandium/feature/provider/widgets/filter_rating_widgets.dart';
+import 'package:me_reserve_bem_estar/components/core_export.dart';
+import 'package:me_reserve_bem_estar/feature/provider/widgets/custom_checkbox.dart';
+import 'package:me_reserve_bem_estar/feature/provider/widgets/filter_rating_widgets.dart';
 import 'package:get/get.dart';
 import 'package:pointer_interceptor/pointer_interceptor.dart';
 

@@ -1,8 +1,8 @@
-import 'package:demandium/components/core_export.dart';
-import 'package:demandium/components/favorite_icon_widget.dart';
-import 'package:demandium/components/on_hover.dart';
-import 'package:demandium/components/service_center_dialog.dart';
-import 'package:demandium/feature/favorite/widget/favorite_item_remove_dialog.dart';
+import 'package:me_reserve_bem_estar/components/core_export.dart';
+import 'package:me_reserve_bem_estar/components/favorite_icon_widget.dart';
+import 'package:me_reserve_bem_estar/components/on_hover.dart';
+import 'package:me_reserve_bem_estar/components/service_center_dialog.dart';
+import 'package:me_reserve_bem_estar/feature/favorite/widget/favorite_item_remove_dialog.dart';
 import 'package:flutter_slidable/flutter_slidable.dart';
 import 'package:get/get.dart';
 

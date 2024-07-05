@@ -1,6 +1,6 @@
-import 'package:demandium/components/core_export.dart';
-import 'package:demandium/core/helper/responsive_helper.dart';
-import 'package:demandium/feature/provider/widgets/custom_checkbox.dart';
+import 'package:me_reserve_bem_estar/components/core_export.dart';
+import 'package:me_reserve_bem_estar/core/helper/responsive_helper.dart';
+import 'package:me_reserve_bem_estar/feature/provider/widgets/custom_checkbox.dart';
 import 'package:flutter_xlider/flutter_xlider.dart';
 import 'package:get/get.dart';
 

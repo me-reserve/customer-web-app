@@ -1,8 +1,8 @@
-import 'package:demandium/feature/home/widget/referal_welcome_dialog.dart';
-import 'package:demandium/feature/service/model/recommendation_search_model.dart';
+import 'package:me_reserve_bem_estar/feature/home/widget/referal_welcome_dialog.dart';
+import 'package:me_reserve_bem_estar/feature/service/model/recommendation_search_model.dart';
 import 'package:get/get.dart';
-import 'package:demandium/components/core_export.dart';
-import 'package:demandium/feature/campaign/model/service_types.dart';
+import 'package:me_reserve_bem_estar/components/core_export.dart';
+import 'package:me_reserve_bem_estar/feature/campaign/model/service_types.dart';
 
 class ServiceController extends GetxController implements GetxService {
   final ServiceRepo serviceRepo;

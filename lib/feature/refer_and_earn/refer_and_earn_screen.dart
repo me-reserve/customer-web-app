@@ -1,5 +1,5 @@
-import 'package:demandium/components/core_export.dart';
-import 'package:demandium/feature/refer_and_earn/widgets/refer_hint_view.dart';
+import 'package:me_reserve_bem_estar/components/core_export.dart';
+import 'package:me_reserve_bem_estar/feature/refer_and_earn/widgets/refer_hint_view.dart';
 import 'package:dotted_border/dotted_border.dart';
 import 'package:expandable_bottom_sheet/expandable_bottom_sheet.dart';
 import 'package:get/get.dart';

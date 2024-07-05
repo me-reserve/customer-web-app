@@ -1,9 +1,9 @@
 // ignore_for_file: deprecated_member_use
-import 'package:demandium/feature/search/widget/already_filtered_widget.dart';
-import 'package:demandium/feature/search/widget/search_filter_button_widget.dart';
-import 'package:demandium/feature/search/widget/search_shimmer_widget.dart';
+import 'package:me_reserve_bem_estar/feature/search/widget/already_filtered_widget.dart';
+import 'package:me_reserve_bem_estar/feature/search/widget/search_filter_button_widget.dart';
+import 'package:me_reserve_bem_estar/feature/search/widget/search_shimmer_widget.dart';
 import 'package:get/get.dart';
-import 'package:demandium/components/core_export.dart';
+import 'package:me_reserve_bem_estar/components/core_export.dart';
 
 class SearchResultScreen extends StatefulWidget {
   final String? queryText;

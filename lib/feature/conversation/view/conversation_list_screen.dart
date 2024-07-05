@@ -1,10 +1,10 @@
-import 'package:demandium/feature/conversation/widgets/conversation_list_shimmer.dart';
-import 'package:demandium/feature/conversation/widgets/conversation_listview.dart';
-import 'package:demandium/feature/conversation/widgets/conversation_search_shimmer.dart';
-import 'package:demandium/feature/conversation/widgets/conversation_search_widget.dart';
-import 'package:demandium/feature/conversation/widgets/conversation_tabview.dart';
+import 'package:me_reserve_bem_estar/feature/conversation/widgets/conversation_list_shimmer.dart';
+import 'package:me_reserve_bem_estar/feature/conversation/widgets/conversation_listview.dart';
+import 'package:me_reserve_bem_estar/feature/conversation/widgets/conversation_search_shimmer.dart';
+import 'package:me_reserve_bem_estar/feature/conversation/widgets/conversation_search_widget.dart';
+import 'package:me_reserve_bem_estar/feature/conversation/widgets/conversation_tabview.dart';
 import 'package:get/get.dart';
-import 'package:demandium/components/core_export.dart';
+import 'package:me_reserve_bem_estar/components/core_export.dart';
 
 
 class ConversationListScreen extends StatefulWidget {

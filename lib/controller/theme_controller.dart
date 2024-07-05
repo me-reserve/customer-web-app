@@ -1,6 +1,6 @@
 import 'package:flutter/services.dart';
 import 'package:get/get.dart';
-import 'package:demandium/utils/app_constants.dart';
+import 'package:me_reserve_bem_estar/utils/app_constants.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 class ThemeController extends GetxController implements GetxService {
