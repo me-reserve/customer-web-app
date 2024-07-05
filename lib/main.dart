@@ -181,8 +181,8 @@ class _MyAppState extends State<MyApp> {
             locale: localizeController.locale,
             translations: Messages(languages: widget.languages),
             fallbackLocale: Locale(AppConstants.languages[0].languageCode!, AppConstants.languages[0].countryCode),
-            initialRoute: Get.find<AuthController>().isLoggedIn() ?  GetPlatform.isWeb ? RouteHelper.getInitialRoute(fromPage: "main") : RouteHelper.getSplashRoute(widget.body, widget.route) : RouteHelper.getNotLoggedScreen( GetPlatform.isWeb ? RouteHelper.main : RouteHelper.getSplashRoute(widget.body, widget.route) , "Login"),
-            getPages: RouteHelper.routes,
+            initialRoute: Get.find<AuthController>().isLoggedIn() ? RouteHelper.getInitialRoute(fromPage: "splash") : RouteHelper.getSplashRoute(widget.body, widget.route),
+            getPages:  RouteHelper.routes,
             defaultTransition: Transition.topLevel,
             transitionDuration: const Duration(milliseconds: 500),
             builder: (context, widget) => MediaQuery(

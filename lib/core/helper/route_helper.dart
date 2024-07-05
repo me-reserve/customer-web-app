@@ -292,7 +292,7 @@ class RouteHelper {
   }
 
 
-  static List<GetPage> routes = [
+   static List<GetPage> routes = [
     GetPage(
       name: initial, binding: BottomNavBinding(),
       page: () => getRoute(ResponsiveHelper.isDesktop(Get.context)
@@ -667,7 +667,6 @@ class RouteHelper {
         return const MyFavoriteScreen();
       },
     ),
-
   ];
 
   static getRoute(Widget navigateTo) {
