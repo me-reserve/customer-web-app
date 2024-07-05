@@ -1,6 +1,6 @@
 import 'package:get/get.dart';
-import 'package:demandium/components/core_export.dart';
-import 'package:demandium/feature/notification/repository/notification_repo.dart';
+import 'package:me_reserve_bem_estar/components/core_export.dart';
+import 'package:me_reserve_bem_estar/feature/notification/repository/notification_repo.dart';
 
 class NotificationController extends GetxController implements GetxService{
   bool _isLoading = false;

@@ -1,5 +1,5 @@
-import 'package:demandium/controller/theme_controller.dart';
-import 'package:demandium/utils/dimensions.dart';
+import 'package:me_reserve_bem_estar/controller/theme_controller.dart';
+import 'package:me_reserve_bem_estar/utils/dimensions.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 

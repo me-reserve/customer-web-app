@@ -1,4 +1,4 @@
-import 'package:demandium/core/helper/phone_verification_helper.dart';
+import 'package:me_reserve_bem_estar/core/helper/phone_verification_helper.dart';
 import 'package:get/get.dart';
 
 

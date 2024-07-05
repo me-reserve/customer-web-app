@@ -1,4 +1,4 @@
-import 'package:demandium/feature/provider/model/provider_model.dart';
+import 'package:me_reserve_bem_estar/feature/provider/model/provider_model.dart';
 
 class AdvertisementModel {
   String? responseCode;

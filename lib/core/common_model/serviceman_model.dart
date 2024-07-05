@@ -1,4 +1,4 @@
-import 'package:demandium/core/common_model/user_model.dart';
+import 'package:me_reserve_bem_estar/core/common_model/user_model.dart';
 
 class Serviceman {
   String? id;

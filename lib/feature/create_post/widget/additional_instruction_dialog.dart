@@ -1,5 +1,5 @@
-import 'package:demandium/components/custom_text_form_field.dart';
-import 'package:demandium/components/core_export.dart';
+import 'package:me_reserve_bem_estar/components/custom_text_form_field.dart';
+import 'package:me_reserve_bem_estar/components/core_export.dart';
 import 'package:get/get.dart';
 
 class AdditionalInstructionDialog extends StatelessWidget {

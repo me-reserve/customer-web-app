@@ -1,7 +1,7 @@
 import 'package:flutter_html/flutter_html.dart';
 import 'package:get/get.dart';
-import 'package:demandium/components/core_export.dart';
-import 'package:demandium/utils/html_type.dart';
+import 'package:me_reserve_bem_estar/components/core_export.dart';
+import 'package:me_reserve_bem_estar/utils/html_type.dart';
 
 class HtmlViewerScreen extends StatelessWidget {
   final HtmlType? htmlType;

@@ -1,5 +1,5 @@
 import 'package:get/get.dart';
-import 'package:demandium/components/core_export.dart';
+import 'package:me_reserve_bem_estar/components/core_export.dart';
 import 'package:flutter_widget_from_html_core/flutter_widget_from_html_core.dart';
 
 

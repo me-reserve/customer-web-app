@@ -1,5 +1,5 @@
 import 'package:get/get_connect/http/src/response/response.dart';
-import 'package:demandium/components/core_export.dart';
+import 'package:me_reserve_bem_estar/components/core_export.dart';
 
 class CategoryRepo {
   final ApiClient apiClient;

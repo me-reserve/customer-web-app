@@ -1,6 +1,6 @@
-import 'package:demandium/components/core_export.dart';
-import 'package:demandium/feature/wallet/controller/wallet_controller.dart';
-import 'package:demandium/feature/wallet/widgets/payment_item_list_widget.dart';
+import 'package:me_reserve_bem_estar/components/core_export.dart';
+import 'package:me_reserve_bem_estar/feature/wallet/controller/wallet_controller.dart';
+import 'package:me_reserve_bem_estar/feature/wallet/widgets/payment_item_list_widget.dart';
 import 'package:get/get.dart';
 import 'package:just_the_tooltip/just_the_tooltip.dart';
 

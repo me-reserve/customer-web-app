@@ -1,9 +1,9 @@
-import 'package:demandium/components/custom_image.dart';
-import 'package:demandium/controller/localization_controller.dart';
-import 'package:demandium/feature/web_landing/controller/web_landing_controller.dart';
-import 'package:demandium/feature/web_landing/model/web_landing_model.dart';
-import 'package:demandium/utils/dimensions.dart';
-import 'package:demandium/utils/styles.dart';
+import 'package:me_reserve_bem_estar/components/custom_image.dart';
+import 'package:me_reserve_bem_estar/controller/localization_controller.dart';
+import 'package:me_reserve_bem_estar/feature/web_landing/controller/web_landing_controller.dart';
+import 'package:me_reserve_bem_estar/feature/web_landing/model/web_landing_model.dart';
+import 'package:me_reserve_bem_estar/utils/dimensions.dart';
+import 'package:me_reserve_bem_estar/utils/styles.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 

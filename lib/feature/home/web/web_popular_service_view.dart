@@ -1,7 +1,7 @@
-import 'package:demandium/components/service_widget_vertical.dart';
-import 'package:demandium/feature/home/controller/advertisement_controller.dart';
+import 'package:me_reserve_bem_estar/components/service_widget_vertical.dart';
+import 'package:me_reserve_bem_estar/feature/home/controller/advertisement_controller.dart';
 import 'package:get/get.dart';
-import 'package:demandium/components/core_export.dart';
+import 'package:me_reserve_bem_estar/components/core_export.dart';
 
 class WebPopularServiceView extends StatelessWidget {
   const WebPopularServiceView({super.key});

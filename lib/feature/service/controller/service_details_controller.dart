@@ -1,7 +1,7 @@
 import 'package:get/get.dart';
-import 'package:demandium/data/provider/checker_api.dart';
-import 'package:demandium/feature/service/model/service_model.dart';
-import 'package:demandium/feature/service/repository/service_details_repo.dart';
+import 'package:me_reserve_bem_estar/data/provider/checker_api.dart';
+import 'package:me_reserve_bem_estar/feature/service/model/service_model.dart';
+import 'package:me_reserve_bem_estar/feature/service/repository/service_details_repo.dart';
 
 class ServiceDetailsController extends GetxController{
   final ServiceDetailsRepo serviceDetailsRepo;

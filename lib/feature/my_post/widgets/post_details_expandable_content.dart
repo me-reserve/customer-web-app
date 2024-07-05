@@ -1,5 +1,5 @@
-import 'package:demandium/components/core_export.dart';
-import 'package:demandium/feature/create_post/model/my_post_model.dart';
+import 'package:me_reserve_bem_estar/components/core_export.dart';
+import 'package:me_reserve_bem_estar/feature/create_post/model/my_post_model.dart';
 import 'package:get/get.dart';
 
 class PostDetailsExpandableContent extends StatelessWidget {

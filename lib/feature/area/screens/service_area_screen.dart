@@ -1,8 +1,8 @@
-import 'package:demandium/feature/area/widget/area_map_view.dart';
-import 'package:demandium/feature/area/widget/area_top_widget.dart';
-import 'package:demandium/feature/area/widget/area_view_widget.dart';
+import 'package:me_reserve_bem_estar/feature/area/widget/area_map_view.dart';
+import 'package:me_reserve_bem_estar/feature/area/widget/area_top_widget.dart';
+import 'package:me_reserve_bem_estar/feature/area/widget/area_view_widget.dart';
 import 'package:get/get.dart';
-import 'package:demandium/components/core_export.dart';
+import 'package:me_reserve_bem_estar/components/core_export.dart';
 
 class ServiceAreaScreen extends StatefulWidget {
   const ServiceAreaScreen({super.key}) ;

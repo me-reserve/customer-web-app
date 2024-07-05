@@ -1,5 +1,5 @@
-import 'package:demandium/components/time_picker_snipper.dart';
-import 'package:demandium/components/core_export.dart';
+import 'package:me_reserve_bem_estar/components/time_picker_snipper.dart';
+import 'package:me_reserve_bem_estar/components/core_export.dart';
 import 'package:get/get.dart';
 
 class CustomTimePicker extends StatelessWidget {

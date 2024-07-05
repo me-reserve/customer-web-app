@@ -1,9 +1,9 @@
-import 'package:demandium/core/helper/image_size_checker.dart';
-import 'package:demandium/feature/conversation/model/conversation_user.dart';
+import 'package:me_reserve_bem_estar/core/helper/image_size_checker.dart';
+import 'package:me_reserve_bem_estar/feature/conversation/model/conversation_user.dart';
 import 'package:universal_html/html.dart' as html;
 import 'package:get/get.dart';
 import 'package:file_picker/file_picker.dart';
-import 'package:demandium/components/core_export.dart';
+import 'package:me_reserve_bem_estar/components/core_export.dart';
 import 'package:flutter_downloader/flutter_downloader.dart';
 
 

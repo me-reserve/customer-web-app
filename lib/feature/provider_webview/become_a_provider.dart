@@ -1,4 +1,4 @@
-import 'package:demandium/components/core_export.dart';
+import 'package:me_reserve_bem_estar/components/core_export.dart';
 import 'package:flutter_inappwebview/flutter_inappwebview.dart';
 
 class ProviderWebView extends StatefulWidget {

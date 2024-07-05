@@ -1,6 +1,6 @@
 import 'package:get/get.dart';
-import 'package:demandium/components/core_export.dart';
-import 'package:demandium/feature/booking/controller/invoice_controller.dart';
+import 'package:me_reserve_bem_estar/components/core_export.dart';
+import 'package:me_reserve_bem_estar/feature/booking/controller/invoice_controller.dart';
 import 'package:pdf/pdf.dart';
 import 'package:printing/printing.dart';
 

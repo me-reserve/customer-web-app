@@ -1,9 +1,9 @@
-import 'package:demandium/components/core_export.dart';
-import 'package:demandium/feature/loyalty_point/controller/loyalty_point_controller.dart';
-import 'package:demandium/feature/loyalty_point/widgets/convert_point_dialog.dart';
-import 'package:demandium/feature/loyalty_point/widgets/loyalty_point_listview.dart';
-import 'package:demandium/feature/loyalty_point/widgets/loyalty_point_topcard.dart';
-import 'package:demandium/feature/loyalty_point/widgets/loyalty_uses_manual_dialog.dart';
+import 'package:me_reserve_bem_estar/components/core_export.dart';
+import 'package:me_reserve_bem_estar/feature/loyalty_point/controller/loyalty_point_controller.dart';
+import 'package:me_reserve_bem_estar/feature/loyalty_point/widgets/convert_point_dialog.dart';
+import 'package:me_reserve_bem_estar/feature/loyalty_point/widgets/loyalty_point_listview.dart';
+import 'package:me_reserve_bem_estar/feature/loyalty_point/widgets/loyalty_point_topcard.dart';
+import 'package:me_reserve_bem_estar/feature/loyalty_point/widgets/loyalty_uses_manual_dialog.dart';
 import 'package:get/get.dart';
 
 class LoyaltyPointScreen extends StatelessWidget {

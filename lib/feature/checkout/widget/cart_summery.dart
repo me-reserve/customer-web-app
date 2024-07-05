@@ -1,7 +1,7 @@
-import 'package:demandium/core/helper/checkout_helper.dart';
+import 'package:me_reserve_bem_estar/core/helper/checkout_helper.dart';
 import 'package:get/get.dart';
-import 'package:demandium/components/core_export.dart';
-import 'package:demandium/feature/checkout/widget/row_text.dart';
+import 'package:me_reserve_bem_estar/components/core_export.dart';
+import 'package:me_reserve_bem_estar/feature/checkout/widget/row_text.dart';
 import 'package:just_the_tooltip/just_the_tooltip.dart';
 
 class CartSummery extends StatelessWidget {

@@ -1,11 +1,11 @@
-import 'package:demandium/components/discount_tag_widget.dart';
-import 'package:demandium/components/favorite_icon_widget.dart';
-import 'package:demandium/components/on_hover.dart';
-import 'package:demandium/feature/provider/model/provider_model.dart';
+import 'package:me_reserve_bem_estar/components/discount_tag_widget.dart';
+import 'package:me_reserve_bem_estar/components/favorite_icon_widget.dart';
+import 'package:me_reserve_bem_estar/components/on_hover.dart';
+import 'package:me_reserve_bem_estar/feature/provider/model/provider_model.dart';
 import 'package:get/get.dart';
-import 'package:demandium/components/ripple_button.dart';
-import 'package:demandium/components/service_center_dialog.dart';
-import 'package:demandium/components/core_export.dart';
+import 'package:me_reserve_bem_estar/components/ripple_button.dart';
+import 'package:me_reserve_bem_estar/components/service_center_dialog.dart';
+import 'package:me_reserve_bem_estar/components/core_export.dart';
 
 class ServiceWidgetVertical extends StatelessWidget {
   final Service service;

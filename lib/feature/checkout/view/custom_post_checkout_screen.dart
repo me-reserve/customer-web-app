@@ -1,12 +1,12 @@
 // ignore_for_file: deprecated_member_use
 
 import 'dart:convert';
-import 'package:demandium/components/core_export.dart';
-import 'package:demandium/feature/checkout/view/payment_screen.dart';
-import 'package:demandium/feature/checkout/widget/custom_post/cart_summary.dart';
-import 'package:demandium/feature/checkout/widget/custom_post/custom_post_service_info.dart';
-import 'package:demandium/feature/checkout/widget/custom_post/expansion_tile.dart';
-import 'package:demandium/feature/checkout/widget/order_details_section/wallet_payment_card.dart';
+import 'package:me_reserve_bem_estar/components/core_export.dart';
+import 'package:me_reserve_bem_estar/feature/checkout/view/payment_screen.dart';
+import 'package:me_reserve_bem_estar/feature/checkout/widget/custom_post/cart_summary.dart';
+import 'package:me_reserve_bem_estar/feature/checkout/widget/custom_post/custom_post_service_info.dart';
+import 'package:me_reserve_bem_estar/feature/checkout/widget/custom_post/expansion_tile.dart';
+import 'package:me_reserve_bem_estar/feature/checkout/widget/order_details_section/wallet_payment_card.dart';
 import 'package:get/get.dart';
 import 'package:just_the_tooltip/just_the_tooltip.dart';
 import 'package:universal_html/html.dart' as html;

@@ -1,11 +1,11 @@
-import 'package:demandium/components/image_dialog.dart';
-import 'package:demandium/feature/booking/widget/booking_cancel_button.dart';
-import 'package:demandium/feature/booking/widget/booking_otp_widget.dart';
+import 'package:me_reserve_bem_estar/components/image_dialog.dart';
+import 'package:me_reserve_bem_estar/feature/booking/widget/booking_cancel_button.dart';
+import 'package:me_reserve_bem_estar/feature/booking/widget/booking_otp_widget.dart';
 import 'package:get/get.dart';
-import 'package:demandium/components/core_export.dart';
-import 'package:demandium/feature/booking/widget/booking_summery_widget.dart';
-import 'package:demandium/feature/booking/widget/provider_info.dart';
-import 'package:demandium/feature/booking/widget/service_man_info.dart';
+import 'package:me_reserve_bem_estar/components/core_export.dart';
+import 'package:me_reserve_bem_estar/feature/booking/widget/booking_summery_widget.dart';
+import 'package:me_reserve_bem_estar/feature/booking/widget/provider_info.dart';
+import 'package:me_reserve_bem_estar/feature/booking/widget/service_man_info.dart';
 import 'booking_screen_shimmer.dart';
 
 class BookingDetailsSection extends StatelessWidget {

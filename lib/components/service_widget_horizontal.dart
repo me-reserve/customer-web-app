@@ -1,8 +1,8 @@
-import 'package:demandium/components/favorite_icon_widget.dart';
-import 'package:demandium/components/on_hover.dart';
-import 'package:demandium/components/ripple_button.dart';
+import 'package:me_reserve_bem_estar/components/favorite_icon_widget.dart';
+import 'package:me_reserve_bem_estar/components/on_hover.dart';
+import 'package:me_reserve_bem_estar/components/ripple_button.dart';
 import 'package:get/get.dart';
-import 'package:demandium/components/core_export.dart';
+import 'package:me_reserve_bem_estar/components/core_export.dart';
 class ServiceWidgetHorizontal extends StatelessWidget {
   final List<Service> serviceList;
   final int index;

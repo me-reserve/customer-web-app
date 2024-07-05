@@ -1,6 +1,6 @@
 import 'package:get/get.dart';
-import 'package:demandium/components/core_export.dart';
-import 'package:demandium/feature/review/repo/submit_review_repo.dart';
+import 'package:me_reserve_bem_estar/components/core_export.dart';
+import 'package:me_reserve_bem_estar/feature/review/repo/submit_review_repo.dart';
 
 class SubmitReviewController extends GetxController {
   final SubmitReviewRepo submitReviewRepo ;

@@ -1,7 +1,7 @@
 
 import 'package:get/get.dart';
 import 'package:pointer_interceptor/pointer_interceptor.dart';
-import 'package:demandium/components/core_export.dart';
+import 'package:me_reserve_bem_estar/components/core_export.dart';
 
 class ReviewRecommendationDialog extends StatefulWidget {
 

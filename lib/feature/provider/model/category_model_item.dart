@@ -1,4 +1,4 @@
-import 'package:demandium/feature/service/controller/service_controller.dart';
+import 'package:me_reserve_bem_estar/feature/service/controller/service_controller.dart';
 import 'package:get/get.dart';
 import '../../service/model/service_model.dart';
 

@@ -1,5 +1,5 @@
 import 'package:get/get.dart';
-import 'package:demandium/components/core_export.dart';
+import 'package:me_reserve_bem_estar/components/core_export.dart';
 
 class BookingStatusTabItem extends GetView<ServiceBookingController> {
   const BookingStatusTabItem({super.key, required this.title}) ;

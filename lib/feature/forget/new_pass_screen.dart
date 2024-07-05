@@ -1,6 +1,6 @@
-import 'package:demandium/feature/forget/model/forget_password_body.dart';
+import 'package:me_reserve_bem_estar/feature/forget/model/forget_password_body.dart';
 import 'package:get/get.dart';
-import 'package:demandium/components/core_export.dart';
+import 'package:me_reserve_bem_estar/components/core_export.dart';
 
 
 class NewPassScreen extends StatefulWidget {

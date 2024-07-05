@@ -1,6 +1,6 @@
 import 'package:get/get.dart';
-import 'package:demandium/core/common_model/user_model.dart';
-import 'package:demandium/components/core_export.dart';
+import 'package:me_reserve_bem_estar/core/common_model/user_model.dart';
+import 'package:me_reserve_bem_estar/components/core_export.dart';
 class ServiceManInfo extends StatelessWidget {
   final User user;
   const ServiceManInfo({super.key,required this.user, }) ;

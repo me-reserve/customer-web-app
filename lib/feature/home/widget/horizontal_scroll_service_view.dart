@@ -1,6 +1,6 @@
-import 'package:demandium/components/service_widget_vertical.dart';
+import 'package:me_reserve_bem_estar/components/service_widget_vertical.dart';
 import 'package:get/get.dart';
-import 'package:demandium/components/core_export.dart';
+import 'package:me_reserve_bem_estar/components/core_export.dart';
 
 class HorizontalScrollServiceView extends GetView<ServiceController> {
   final String? fromPage;

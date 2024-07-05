@@ -1,9 +1,9 @@
 // ignore_for_file: deprecated_member_use
 
-import 'package:demandium/core/helper/string_parser.dart';
+import 'package:me_reserve_bem_estar/core/helper/string_parser.dart';
 import 'package:flutter_inappwebview/flutter_inappwebview.dart';
 import 'package:get/get.dart';
-import 'package:demandium/components/core_export.dart';
+import 'package:me_reserve_bem_estar/components/core_export.dart';
 import 'package:uuid/uuid.dart';
 
 class PaymentScreen extends StatefulWidget {

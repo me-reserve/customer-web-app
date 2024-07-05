@@ -1,8 +1,8 @@
-import 'package:demandium/components/core_export.dart';
-import 'package:demandium/components/favorite_icon_widget.dart';
-import 'package:demandium/components/on_hover.dart';
-import 'package:demandium/components/ripple_button.dart';
-import 'package:demandium/feature/provider/model/provider_model.dart';
+import 'package:me_reserve_bem_estar/components/core_export.dart';
+import 'package:me_reserve_bem_estar/components/favorite_icon_widget.dart';
+import 'package:me_reserve_bem_estar/components/on_hover.dart';
+import 'package:me_reserve_bem_estar/components/ripple_button.dart';
+import 'package:me_reserve_bem_estar/feature/provider/model/provider_model.dart';
 import 'package:get/get.dart';
 
 class ProviderItemView extends StatelessWidget {

@@ -1,7 +1,7 @@
-import 'package:demandium/feature/booking/widget/booking_screen_shimmer.dart';
+import 'package:me_reserve_bem_estar/feature/booking/widget/booking_screen_shimmer.dart';
 import 'package:get/get.dart';
 import 'package:timelines/timelines.dart';
-import 'package:demandium/components/core_export.dart';
+import 'package:me_reserve_bem_estar/components/core_export.dart';
 
 class BookingHistory extends StatelessWidget {
 

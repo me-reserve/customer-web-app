@@ -1,12 +1,12 @@
 import 'dart:ui';
 
-import 'package:demandium/components/core_export.dart';
-import 'package:demandium/core/helper/map_bound_helper.dart';
-import 'package:demandium/feature/home/controller/advertisement_controller.dart';
-import 'package:demandium/feature/provider/controller/explore_provider_controller.dart';
-import 'package:demandium/feature/provider/model/category_model_item.dart';
-import 'package:demandium/feature/provider/model/provider_details_model.dart';
-import 'package:demandium/feature/provider/model/provider_model.dart';
+import 'package:me_reserve_bem_estar/components/core_export.dart';
+import 'package:me_reserve_bem_estar/core/helper/map_bound_helper.dart';
+import 'package:me_reserve_bem_estar/feature/home/controller/advertisement_controller.dart';
+import 'package:me_reserve_bem_estar/feature/provider/controller/explore_provider_controller.dart';
+import 'package:me_reserve_bem_estar/feature/provider/model/category_model_item.dart';
+import 'package:me_reserve_bem_estar/feature/provider/model/provider_details_model.dart';
+import 'package:me_reserve_bem_estar/feature/provider/model/provider_model.dart';
 import 'package:get/get.dart';
 import 'package:scroll_to_index/scroll_to_index.dart';
 

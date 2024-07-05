@@ -1,9 +1,9 @@
 import 'dart:convert';
-import 'package:demandium/components/core_export.dart';
-import 'package:demandium/feature/create_post/model/create_post_body.dart';
-import 'package:demandium/feature/create_post/model/my_post_model.dart';
-import 'package:demandium/feature/create_post/model/provider_offer_model.dart';
-import 'package:demandium/feature/my_post/widgets/provider_bidding_notification_dialog.dart';
+import 'package:me_reserve_bem_estar/components/core_export.dart';
+import 'package:me_reserve_bem_estar/feature/create_post/model/create_post_body.dart';
+import 'package:me_reserve_bem_estar/feature/create_post/model/my_post_model.dart';
+import 'package:me_reserve_bem_estar/feature/create_post/model/provider_offer_model.dart';
+import 'package:me_reserve_bem_estar/feature/my_post/widgets/provider_bidding_notification_dialog.dart';
 import 'package:get/get.dart';
 
 

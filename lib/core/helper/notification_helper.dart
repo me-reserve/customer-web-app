@@ -1,12 +1,12 @@
 import 'dart:convert';
 import 'dart:math';
-import 'package:demandium/components/push_notification_dialog.dart';
-import 'package:demandium/feature/checkout/widget/custom_post/provider_withdraw_bid_dialog.dart';
+import 'package:me_reserve_bem_estar/components/push_notification_dialog.dart';
+import 'package:me_reserve_bem_estar/feature/checkout/widget/custom_post/provider_withdraw_bid_dialog.dart';
 import 'package:flutter_local_notifications/flutter_local_notifications.dart';
 import 'package:get/get.dart';
 import 'package:path_provider/path_provider.dart';
 import 'package:http/http.dart' as http;
-import 'package:demandium/components/core_export.dart';
+import 'package:me_reserve_bem_estar/components/core_export.dart';
 
 class NotificationHelper {
 

@@ -1,4 +1,4 @@
-import 'package:demandium/feature/location/model/place_details_model.dart';
+import 'package:me_reserve_bem_estar/feature/location/model/place_details_model.dart';
 
 class PagesModel {
   String? responseCode;

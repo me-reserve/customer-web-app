@@ -1,7 +1,7 @@
-import 'package:demandium/feature/home/controller/banner_controller.dart';
-import 'package:demandium/feature/home/repository/banner_repo.dart';
-import 'package:demandium/feature/wallet/controller/wallet_controller.dart';
-import 'package:demandium/feature/wallet/repository/wallet_repo.dart';
+import 'package:me_reserve_bem_estar/feature/home/controller/banner_controller.dart';
+import 'package:me_reserve_bem_estar/feature/home/repository/banner_repo.dart';
+import 'package:me_reserve_bem_estar/feature/wallet/controller/wallet_controller.dart';
+import 'package:me_reserve_bem_estar/feature/wallet/repository/wallet_repo.dart';
 import 'package:get/get.dart';
 
 class WalletBinding extends Bindings{

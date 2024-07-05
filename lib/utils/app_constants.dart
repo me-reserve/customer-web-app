@@ -1,5 +1,5 @@
-import 'package:demandium/data/model/response/language_model.dart';
-import 'package:demandium/utils/images.dart';
+import 'package:me_reserve_bem_estar/data/model/response/language_model.dart';
+import 'package:me_reserve_bem_estar/utils/images.dart';
 
 class AppConstants {
   static const String appName = 'Me reserve';

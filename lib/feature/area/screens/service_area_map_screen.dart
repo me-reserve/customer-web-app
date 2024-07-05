@@ -1,6 +1,6 @@
-import 'package:demandium/feature/area/widget/area_map_view.dart';
+import 'package:me_reserve_bem_estar/feature/area/widget/area_map_view.dart';
 import 'package:get/get.dart';
-import 'package:demandium/components/core_export.dart';
+import 'package:me_reserve_bem_estar/components/core_export.dart';
 
 class ServiceAreaMapScreen extends StatefulWidget {
   const ServiceAreaMapScreen({super.key}) ;

@@ -1,13 +1,13 @@
 import 'dart:math';
-import 'package:demandium/core/helper/responsive_helper.dart';
+import 'package:me_reserve_bem_estar/core/helper/responsive_helper.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:demandium/components/custom_image.dart';
-import 'package:demandium/core/helper/help_me.dart';
-import 'package:demandium/feature/home/controller/campaign_controller.dart';
-import 'package:demandium/feature/splash/controller/splash_controller.dart';
-import 'package:demandium/utils/dimensions.dart';
-import 'package:demandium/utils/images.dart';
+import 'package:me_reserve_bem_estar/components/custom_image.dart';
+import 'package:me_reserve_bem_estar/core/helper/help_me.dart';
+import 'package:me_reserve_bem_estar/feature/home/controller/campaign_controller.dart';
+import 'package:me_reserve_bem_estar/feature/splash/controller/splash_controller.dart';
+import 'package:me_reserve_bem_estar/utils/dimensions.dart';
+import 'package:me_reserve_bem_estar/utils/images.dart';
 import 'package:shimmer_animation/shimmer_animation.dart';
 
 class RandomCampaignView extends StatelessWidget {

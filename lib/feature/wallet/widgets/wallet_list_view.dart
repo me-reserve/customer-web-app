@@ -1,9 +1,9 @@
-import 'package:demandium/components/core_export.dart';
-import 'package:demandium/feature/loyalty_point/model/loyalty_point_model.dart';
-import 'package:demandium/feature/wallet/controller/wallet_controller.dart';
-import 'package:demandium/feature/wallet/model/wallet_filter_body.dart';
-import 'package:demandium/feature/wallet/widgets/wallet_list_item.dart';
-import 'package:demandium/feature/wallet/widgets/wallet_shimmer.dart';
+import 'package:me_reserve_bem_estar/components/core_export.dart';
+import 'package:me_reserve_bem_estar/feature/loyalty_point/model/loyalty_point_model.dart';
+import 'package:me_reserve_bem_estar/feature/wallet/controller/wallet_controller.dart';
+import 'package:me_reserve_bem_estar/feature/wallet/model/wallet_filter_body.dart';
+import 'package:me_reserve_bem_estar/feature/wallet/widgets/wallet_list_item.dart';
+import 'package:me_reserve_bem_estar/feature/wallet/widgets/wallet_shimmer.dart';
 import 'package:get/get.dart';
 
 class WalletListView extends StatelessWidget {

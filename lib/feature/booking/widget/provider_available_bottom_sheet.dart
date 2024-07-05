@@ -1,6 +1,6 @@
-import 'package:demandium/components/core_export.dart';
-import 'package:demandium/feature/booking/model/service_availability_model.dart';
-import 'package:demandium/feature/booking/widget/service_unavailable_dialog.dart';
+import 'package:me_reserve_bem_estar/components/core_export.dart';
+import 'package:me_reserve_bem_estar/feature/booking/model/service_availability_model.dart';
+import 'package:me_reserve_bem_estar/feature/booking/widget/service_unavailable_dialog.dart';
 import 'package:get/get.dart';
 
 

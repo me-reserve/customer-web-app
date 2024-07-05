@@ -1,10 +1,10 @@
-import 'package:demandium/feature/cart/widget/available_provider_widgets.dart';
-import 'package:demandium/feature/cart/widget/selected_provider_widget.dart';
-import 'package:demandium/feature/cart/widget/unselected_provider_widget.dart';
-import 'package:demandium/feature/home/widget/bottom_create_post_dialog.dart';
-import 'package:demandium/feature/provider/model/provider_model.dart';
+import 'package:me_reserve_bem_estar/feature/cart/widget/available_provider_widgets.dart';
+import 'package:me_reserve_bem_estar/feature/cart/widget/selected_provider_widget.dart';
+import 'package:me_reserve_bem_estar/feature/cart/widget/unselected_provider_widget.dart';
+import 'package:me_reserve_bem_estar/feature/home/widget/bottom_create_post_dialog.dart';
+import 'package:me_reserve_bem_estar/feature/provider/model/provider_model.dart';
 import 'package:get/get.dart';
-import 'package:demandium/components/core_export.dart';
+import 'package:me_reserve_bem_estar/components/core_export.dart';
 import 'package:pointer_interceptor/pointer_interceptor.dart';
 
 class ServiceCenterDialog extends StatefulWidget {

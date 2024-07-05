@@ -1,9 +1,9 @@
 import 'package:get/get.dart';
-import 'package:demandium/core/helper/decorated_tab_bar.dart';
-import 'package:demandium/feature/profile/controller/edit_profile_tab_controller.dart';
-import 'package:demandium/feature/profile/view/account_info.dart';
-import 'package:demandium/feature/profile/view/edit_profile_general_info.dart';
-import 'package:demandium/components/core_export.dart';
+import 'package:me_reserve_bem_estar/core/helper/decorated_tab_bar.dart';
+import 'package:me_reserve_bem_estar/feature/profile/controller/edit_profile_tab_controller.dart';
+import 'package:me_reserve_bem_estar/feature/profile/view/account_info.dart';
+import 'package:me_reserve_bem_estar/feature/profile/view/edit_profile_general_info.dart';
+import 'package:me_reserve_bem_estar/components/core_export.dart';
 
 class EditProfileScreen extends GetView<EditProfileTabController> {
   const EditProfileScreen({super.key}) ;

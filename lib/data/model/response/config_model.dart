@@ -1,5 +1,5 @@
 import 'dart:convert';
-import 'package:demandium/feature/web_landing/model/web_landing_model.dart';
+import 'package:me_reserve_bem_estar/feature/web_landing/model/web_landing_model.dart';
 
 class ConfigModel {
   String? responseCode;

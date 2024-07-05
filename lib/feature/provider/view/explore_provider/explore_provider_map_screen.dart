@@ -1,6 +1,6 @@
-import 'package:demandium/components/core_export.dart';
-import 'package:demandium/feature/provider/controller/explore_provider_controller.dart';
-import 'package:demandium/feature/provider/widgets/explore_provider_item_view.dart';
+import 'package:me_reserve_bem_estar/components/core_export.dart';
+import 'package:me_reserve_bem_estar/feature/provider/controller/explore_provider_controller.dart';
+import 'package:me_reserve_bem_estar/feature/provider/widgets/explore_provider_item_view.dart';
 import 'package:get/get.dart';
 import 'package:scroll_to_index/scroll_to_index.dart';
 

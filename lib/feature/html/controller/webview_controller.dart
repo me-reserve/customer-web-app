@@ -1,7 +1,7 @@
 import 'package:get/get.dart';
-import 'package:demandium/data/provider/checker_api.dart';
-import 'package:demandium/feature/html/model/pages_model.dart';
-import 'package:demandium/feature/html/repository/html_repo.dart';
+import 'package:me_reserve_bem_estar/data/provider/checker_api.dart';
+import 'package:me_reserve_bem_estar/feature/html/model/pages_model.dart';
+import 'package:me_reserve_bem_estar/feature/html/repository/html_repo.dart';
 
 class HtmlViewController extends GetxController{
   final HtmlRepository htmlRepository;

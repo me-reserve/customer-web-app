@@ -1,6 +1,6 @@
-import 'package:demandium/components/custom_divider.dart';
-import 'package:demandium/components/core_export.dart';
-import 'package:demandium/feature/loyalty_point/model/loyalty_point_model.dart';
+import 'package:me_reserve_bem_estar/components/custom_divider.dart';
+import 'package:me_reserve_bem_estar/components/core_export.dart';
+import 'package:me_reserve_bem_estar/feature/loyalty_point/model/loyalty_point_model.dart';
 import 'package:get/get.dart';
 
 class WalletListItem extends StatelessWidget {

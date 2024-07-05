@@ -1,8 +1,8 @@
-import 'package:demandium/components/core_export.dart';
-import 'package:demandium/feature/provider/model/category_model_item.dart';
-import 'package:demandium/feature/provider/widgets/category_item_view.dart';
-import 'package:demandium/feature/provider/widgets/provider_details_top_card.dart';
-import 'package:demandium/feature/provider/widgets/vertical_scrollable_tabview.dart';
+import 'package:me_reserve_bem_estar/components/core_export.dart';
+import 'package:me_reserve_bem_estar/feature/provider/model/category_model_item.dart';
+import 'package:me_reserve_bem_estar/feature/provider/widgets/category_item_view.dart';
+import 'package:me_reserve_bem_estar/feature/provider/widgets/provider_details_top_card.dart';
+import 'package:me_reserve_bem_estar/feature/provider/widgets/vertical_scrollable_tabview.dart';
 import 'package:get/get.dart';
 
 

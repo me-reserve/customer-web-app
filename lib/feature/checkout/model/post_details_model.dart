@@ -1,6 +1,6 @@
-import 'package:demandium/feature/address/model/address_model.dart';
-import 'package:demandium/feature/create_post/model/my_post_model.dart';
-import 'package:demandium/feature/provider/model/provider_model.dart';
+import 'package:me_reserve_bem_estar/feature/address/model/address_model.dart';
+import 'package:me_reserve_bem_estar/feature/create_post/model/my_post_model.dart';
+import 'package:me_reserve_bem_estar/feature/provider/model/provider_model.dart';
 import '../../service/model/service_model.dart';
 import '../../suggest_new_service/model/suggest_service_model.dart';
 

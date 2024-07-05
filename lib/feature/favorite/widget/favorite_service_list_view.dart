@@ -1,6 +1,6 @@
-import 'package:demandium/components/core_export.dart';
-import 'package:demandium/feature/favorite/controller/my_favorite_controller.dart';
-import 'package:demandium/feature/favorite/widget/favorite_service_item_view.dart';
+import 'package:me_reserve_bem_estar/components/core_export.dart';
+import 'package:me_reserve_bem_estar/feature/favorite/controller/my_favorite_controller.dart';
+import 'package:me_reserve_bem_estar/feature/favorite/widget/favorite_service_item_view.dart';
 import 'package:get/get.dart';
 
 class FavoriteServiceListView extends StatelessWidget {

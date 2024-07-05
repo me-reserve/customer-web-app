@@ -1,9 +1,9 @@
-import 'package:demandium/components/core_export.dart';
-import 'package:demandium/feature/loyalty_point/model/loyalty_point_model.dart';
-import 'package:demandium/feature/wallet/model/bonus_model.dart';
-import 'package:demandium/feature/wallet/model/wallet_filter_body.dart';
-import 'package:demandium/feature/wallet/model/wallet_transaction_model.dart';
-import 'package:demandium/feature/wallet/repository/wallet_repo.dart';
+import 'package:me_reserve_bem_estar/components/core_export.dart';
+import 'package:me_reserve_bem_estar/feature/loyalty_point/model/loyalty_point_model.dart';
+import 'package:me_reserve_bem_estar/feature/wallet/model/bonus_model.dart';
+import 'package:me_reserve_bem_estar/feature/wallet/model/wallet_filter_body.dart';
+import 'package:me_reserve_bem_estar/feature/wallet/model/wallet_transaction_model.dart';
+import 'package:me_reserve_bem_estar/feature/wallet/repository/wallet_repo.dart';
 import 'package:get/get.dart';
 
 class WalletController extends GetxController{

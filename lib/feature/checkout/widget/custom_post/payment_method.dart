@@ -1,6 +1,6 @@
-import 'package:demandium/components/core_export.dart';
-import 'package:demandium/feature/checkout/widget/payment_section/digital_payment.dart';
-import 'package:demandium/feature/checkout/widget/payment_section/payment_method_button.dart';
+import 'package:me_reserve_bem_estar/components/core_export.dart';
+import 'package:me_reserve_bem_estar/feature/checkout/widget/payment_section/digital_payment.dart';
+import 'package:me_reserve_bem_estar/feature/checkout/widget/payment_section/payment_method_button.dart';
 import 'package:get/get.dart';
 
 class PaymentMethod extends StatefulWidget {

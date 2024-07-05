@@ -1,7 +1,7 @@
 
 import 'package:country_code_picker/country_code_picker.dart';
-import 'package:demandium/components/core_export.dart';
-import 'package:demandium/feature/profile/controller/edit_profile_tab_controller.dart';
+import 'package:me_reserve_bem_estar/components/core_export.dart';
+import 'package:me_reserve_bem_estar/feature/profile/controller/edit_profile_tab_controller.dart';
 import 'package:get/get.dart';
 import 'package:phone_numbers_parser/phone_numbers_parser.dart';
 

@@ -1,5 +1,5 @@
 import 'package:get/get.dart';
-import 'package:demandium/controller/theme_controller.dart';
+import 'package:me_reserve_bem_estar/controller/theme_controller.dart';
 
 class SettingsBinding extends Bindings{
   @override

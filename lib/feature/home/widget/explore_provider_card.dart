@@ -1,5 +1,5 @@
-import 'package:demandium/components/core_export.dart';
-import 'package:demandium/components/ripple_button.dart';
+import 'package:me_reserve_bem_estar/components/core_export.dart';
+import 'package:me_reserve_bem_estar/components/ripple_button.dart';
 import 'package:get/get.dart';
 
 class ExploreProviderCard extends StatelessWidget {
