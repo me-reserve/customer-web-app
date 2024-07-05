@@ -205,7 +205,7 @@ class _SignInScreenState extends State<SignInScreen> {
                            Get.find<SplashController>().configModel.content?.facebookSocialLogin.toString() == '1' ?
                            SocialLoginWidget(fromPage: widget.fromPage,): const SizedBox(),
                            const SizedBox(height: Dimensions.paddingSizeDefault,),
-                           Row(
+                           /*Row(
                              mainAxisAlignment: MainAxisAlignment.center,
                              children: [
                                Text('${'do_not_have_an_account'.tr} ',
@@ -261,7 +261,7 @@ class _SignInScreenState extends State<SignInScreen> {
                                ),)
                                
                              ],
-                           ),
+                           ),*/
                            const SizedBox(height: Dimensions.paddingSizeExtraMoreLarge,),
                                
                          ]),
