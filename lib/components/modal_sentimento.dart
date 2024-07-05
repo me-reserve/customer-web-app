@@ -21,11 +21,6 @@ class _ModalSentimentoState extends State<ModalSentimento> {
   @override
   initState(){
     // TODO: implement initState
-
-     if(Get.find<AuthController>().isLoggedIn()) {
-      Get.find<UserController>().getUserInfo();
-    }
-
     super.initState();
   }
 

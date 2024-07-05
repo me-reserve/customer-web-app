@@ -47,20 +47,38 @@ class _HomeScreenState extends State<HomeScreen> {
   int availableServiceCount = 0;
 
   Future<void> _setModalShown() async {
+    dynamic id = Get.find<UserController>().userInfoModel?.id.toString();
+    if (id == null) return;
+
     SharedPreferences prefs = await SharedPreferences.getInstance();
+    List<String> userIdList = prefs.getStringList('userIdList') ?? [];
+
+    if (!userIdList.contains(id)) {
+      userIdList.add(id);
+    }
+
     String today = DateFormat('yyyy-MM-dd').format(DateTime.now());
     bool result = await prefs.setString('modalShownDate', today);
-    print('Modal Shown Date set to: $today, Result: $result'); // Log para verificação
+    bool result2 = await prefs.setStringList("userIdList", userIdList);
+
+    print('Modal Shown Date set to: $today, Result: $result');
+    print('User ID List updated, Result: $result2');
   }
-  
+
   Future<void> _checkModal() async {
+    dynamic id = Get.find<UserController>().userInfoModel?.id.toString();
+    if (id == null) return;
+
     SharedPreferences prefs = await SharedPreferences.getInstance();
     String today = DateFormat('yyyy-MM-dd').format(DateTime.now());
     String? lastShown = prefs.getString('modalShownDate');
-    print(today);
-    print(lastShown);
+    List<String>? userIdList = prefs.getStringList('userIdList');
 
-    if (lastShown == null || lastShown != today) {
+    print('Today: $today');
+    print('Last Shown: $lastShown');
+    print('User ID List: $userIdList');
+
+    if (lastShown == null || lastShown != today || !(userIdList?.contains(id) ?? false)) {
       WidgetsBinding.instance.addPostFrameCallback((_) {
         _showModalBottomSheet(context);
       });
@@ -76,6 +94,7 @@ class _HomeScreenState extends State<HomeScreen> {
   @override
   void initState() {
     super.initState();
+
     _checkModal();
 
     Get.find<LocalizationController>().filterLanguage(shouldUpdate: false);
