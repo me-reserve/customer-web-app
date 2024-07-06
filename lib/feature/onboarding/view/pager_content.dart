@@ -65,7 +65,7 @@ class PagerContent extends StatelessWidget {
           Stack(
             clipBehavior: Clip.none,
             children: [
-              Image.asset(Images.onBoardingTop, width: Get.width, fit: BoxFit.cover,),
+             
               SafeArea(
                 child: InkWell(
                   onTap: () {
@@ -86,12 +86,7 @@ class PagerContent extends StatelessWidget {
                   ),
                 ),
               ),
-              Positioned(
-                bottom: -10,
-                left: 40,
-                right: 40,
-                child: Image.asset(topImage,),
-              ),
+              
             ],
           ),
 
